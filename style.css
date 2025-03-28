@@ -231,6 +231,10 @@ footer {
     width: 100vw;
 }
 
+footer > img {
+    filter: invert(1);
+}
+
 footer > img:hover {
     filter: invert(54%) sepia(15%) saturate(1787%) hue-rotate(357deg) brightness(104%) contrast(88%);
 }
