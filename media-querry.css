@@ -26,6 +26,12 @@
         margin: auto;
     }
 
+    #quem-somos > p {
+        color: var(--cor0);
+        padding: 20px;
+        margin: 0 40px;
+    }
+
     section {
         flex-flow: row wrap;
         justify-content: space-around;

@@ -110,12 +110,29 @@ nav > a:hover {
     border-radius: 10px;
 }
 
-#quem-somos > p {
-    color: var(--cor0);
+#quem-somos {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;    
+}
+
+#quem-somos > img {
+    height: 200px;
+    width: 290px;
 }
 
 #quem-somos > h1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
     padding: 40px 0 20px 30px;
+    color: var(--cor0);
+}
+
+#quem-somos > p {
+    color: var(--cor0);
+    padding: 20px;
+    margin: 0 30px;
 }
 
 section {
@@ -206,4 +223,14 @@ section {
 
 #descricao, #d2, #d3 {
     display: none;
+}
+
+footer {
+    background-color: var(--cor0);
+    height: 300px;
+    width: 100vw;
+}
+
+footer > img:hover {
+    filter: invert(54%) sepia(15%) saturate(1787%) hue-rotate(357deg) brightness(104%) contrast(88%);
 }
