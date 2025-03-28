@@ -1,0 +1,64 @@
+@media screen and (min-width: 992px) {
+    header > img {
+        margin-left: 10vw;
+    }
+   header > nav {
+        display: block; 
+        display: flex;
+        margin-right: 10vw;
+        background-color: white; 
+    }
+    header > nav > a {     
+       text-decoration: none;
+       color: var(--cor0);
+       font-weight: bold;
+       align-items: center;
+       padding: 10px;
+       transition-duration: 0.5s;
+   }
+    #burguer {
+        display: none;
+    }
+
+    #quem-somos {
+        display: flex;
+        flex-flow: row wrap;
+        margin: auto;
+    }
+
+    section {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    
+    .servicos-disposicao {
+        height: 370px; /* alterar talvez retirar*/
+    }
+
+    #nosso-time {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-left:0px;
+        padding: 30px;
+        background-image: url(imagens/fundos/07.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center left; /*opcional*/     
+    }
+
+    #nosso-time > h1 {
+        margin-right: 700px; /* corrigir*/
+    }
+
+    #nosso-time > h1, h2, p {
+        color: white;
+    }
+    .perfil {
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.377);    
+        color: rgba(255, 255, 255, 0);
+    }
+
+ }
+ 

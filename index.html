@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-querry.css">
+    <title>Queiroz Nepomuceno</title>
+    
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <img src="imagens/logo1.png" alt="logo">
+        <i id="burguer" class="Icons8" onclick="clickMenu()"><img src="imagens/icone-hamburguer.png"></i>  
+        <nav id="itens" >
+            <a href="#">Quem Somos</a>
+            <a href="#">Histórico de Atuação</a>
+            <a href="#">Serviços Executados</a>
+            <a href="#">Nosso time</a>
+        </nav>      
+    </header>
+
+    <main>
+        <div id="quem-somos">
+            <h1>Quem Somos</h1>
+            <p> Fundada em 2022, mas reunindo profissionais com experiência sólida em projetos
+                e serviços de engenharia, a Queiroz Nepomuceno Projeto e Construção tem
+                atuado em atividades que vão desde o pensar na solução até a realização da visão
+                do nosso cliente com o compromisso de fornecer soluções inovadoras e
+                eficientes que atendam as suas necessidades e expectativas.</p>
+            <p>  Nossa missão é entregar produtos de qualidade, entregando projetos completos,
+                obras diferenciadas, que combinam precisão técnica, criatividade e
+                sustentabilidade. Nós nos dedicamos a criar estruturas duráveis e funcionais,
+                respeitando prazos e orçamentos, sem comprometer a excelência.
+                Nossa visão é nos tornarmos líderes no setor de engenharia de projetos,
+                reconhecidos por nossa integridade, inovação e competência. Valorizamos a
+                confiança que nossos clientes depositam em nós e nos esforçamos para superar suas expectativas em cada projeto.</p>
+            <p> Com uma equipe de profissionais diferenciados e comprometidos, estamos
+                prontos para enfrentar qualquer desafio e proporcionar resultados que fazem a
+                diferença. Se você procura uma empresa de engenharia que alia experiência,
+                dedicação e qualidade, a Queiroz Nepomuceno é a escolha certa.</p>
+        </div>
+
+        <h1>Serviços </h1>
+        <section>
+            
+            <div class="servicos-disposicao">
+                <h3>Execução de Obras</h3>
+                <li>Executamos obras de engenharia com excelência, atendendo a projetos
+                    de diferentes padrões de complexidade. Nossa equipe é capacitada para
+                    a realização de construções de baixo, médio e alto padrão, inclusive com
+                    experiência em projetos de infraestrutura urbana, sempre com foco na
+                    qualidade, segurança e satisfação do cliente.</li>
+            </div>
+            <div class="servicos-disposicao">
+                <h3>Projeto de Estruturas</h3>
+                <li>Desenvolvemos projetos estruturais personalizados que utilizam,
+                    garantindo segurança, durabilidade e eficiência. Nossa equipe de
+                    engenheiros experientes aplica os mais altos padrões de qualidade para
+                    criar estruturas que atendam às necessidades específicas de cada
+                    projeto. Em nosso acervo, já atendemos projetos de estruturas de
+                    concreto e estruturas de aço, na qual somos especialistas.</li>
+            </div>
+            <div class="servicos-disposicao">
+                <h3>Projeto de Fundações e Contenções</h3>
+                <li>Realizamos projetos de fundações que garantem a estabilidade e a
+                    integridade estrutural das edificações. Utilizamos técnicas avançadas e
+                    análise detalhada do solo para projetar fundações seguras e econômicas,
+                    adaptadas às condições geotécnicas de cada local. Desenvolvemos
+                    projetos de muros de contenção para diversas finalidades, incluindo
+                    estabilização de terrenos e contenção de encostas. Nossos projetos
+                    garantem a segurança e a funcionalidade, utilizando materiais e técnicas
+                    adequadas para cada situação.</li>
+            </div>
+            <div class="servicos-disposicao">
+                <h3>Projeto de Instalações Prediais</h3>
+                <li>Oferecemos projetos completos de instalações elétricas, hidráulicas,
+                    sanitárias e de drenagem para edificações residenciais, comerciais e
+                    industriais utilizando tecnologia BIM. Nossos projetos visam eficiência
+                    energética, sustentabilidade sempre em conformidade com as normas
+                    vigentes. Hoje, as instalações prediais e as estrutuas de aço tem sido o
+                    carro chege da nossa empresa em demandas.</li>
+            </div>
+            <div class="servicos-disposicao">
+                <h3>Orçamento e Planejamento de Obras</h3>
+                <li>Fornecemos serviços de orçamento e planejamento de obras, ajudando
+                    nossos clientes a prever custos, prazos e recursos necessários. Nosso
+                    objetivo é garantir a execução eficiente e dentro do orçamento dos
+                    projetos, minimizando riscos e maximizando resultados.</li>
+            </div>
+            <div class="servicos-disposicao">
+                <h3>Perícia e Avaliação de Imóveis Urbanos</h3>
+                <li>Realizamos perícias e avaliações técnicas de imóveis urbanos, fornecendo
+                    laudos detalhados e precisos, determinando o valor venal ou patrimonial.
+                    Nossa expertise abrange desde a análise de condições estruturais até a
+                    avaliação de valor de mercado, garantindo informações confiáveis para
+                    tomadas de decisão.</li>
+            </div>
+        </section>
+        
+        <div id="div2">
+        <h1>Nossos Projetos</h1>
+        
+        <div id="slider">
+            <img class="selected" src="imagens/c1.jpg" alt="image1">
+            <img src="imagens/c2.jpg" alt="image2">
+            <img src="imagens/p1.jpg" alt="image3">
+            <img src="imagens/p2.jpg" alt="image4">
+            <img src="imagens/p4.jpg" alt="image5">
+        </div>
+        
+        
+        <div id="nosso-time"> 
+            <h1>Nosso Time</h1>
+            <div class="perfil" onclick="clickPerfil()">
+                <img src="imagens/ed1.png" alt="CEO">
+                <h2>Edmilton Queiroz</h2>
+                <p id="descricao">
+                    Engenheiro Civil, Mestrado em Engenharia Civil e Ambiental com foco em Recursos Hídricos,Especialista em Projeto e Construção de Estruturas de Aço e Madeira.
+                     Já com quase uma década de experiência, Edmilton Queiroz é um
+                    profissional qualificado e dedicado na área de engenharia civil. Durante sua
+                    carreira, ele elaborou projetos completos para edifícios de até 4 pavimentos e
+                    desenvolveu mais de 175 hectares de projetos de abastecimento. Sua expertise
+                    abrange desde a criação de projetos complementares para edificações, como casas
+                    do padrão Minha Casa Minha Vida, até hospitais com mais de 1200 metros
+                    quadrados de área de projeto.
+                    Edmilton é conhecido por sua habilidade em atender projetos complexos,
+                    garantindo eficiência, qualidade e conformidade com as normas técnicas. Sua
+                    dedicação e conhecimento técnico têm sido fundamentais para o sucesso dos
+                    projetos que lidera, assegurando sempre a satisfação dos clientes e a excelência
+                    dos resultados. </p>
+            </div>
+
+            <div class="perfil" onclick="clickPerfil2()">
+                <img src="imagens/e2.jpg" alt="diretora">
+                <h2>Isabele Nepomuceno</h2>
+                <p id="d2"> Caroline Nepomuceno é uma engenheira civil dedicada, com uma
+                    formação acadêmica recente, mas uma sólida experiência prática em obras iniciada
+                    em 2018. Caroline começou sua carreira atuando na fiscalização de obras públicas
+                    de infraestrutura, onde lidou com projetos de pavimentação, redes de esgotamento
+                    sanitário e estações de tratamento de esgoto. Sua atuação incluiu a supervisão da
+                    manutenção de estações de tratamento de esgoto operadas pela Compesa.
+                    Posteriormente, Caroline migrou para o setor de obras privadas, onde se destacou
+                    como responsável pela execução de diversas obras. Sua experiência inclui projetos
+                    de fundação, reforço estrutural em coberturas, além de trabalhos em residências e
+                    indústrias. Ela supervisionou desde reformas e impermeabilização de coberturas
+                    até revestimentos vinílicos, demonstrando uma versatilidade e competência
+                    excepcionais em diferentes áreas da engenharia civil.
+                    Com uma combinação de experiência prática em obras públicas e privadas,
+                    Caroline possui uma visão abrangente e habilidades técnicas robustas, essenciais
+                    para garantir a excelência em cada projeto que gerencia. Sua capacidade de
+                    adaptar-se a diferentes tipos de obras e desafios a torna uma profissional valiosa e
+                    eficaz na entrega de resultados de alta qualidade.  </p>
+            </div>
+
+            <div class="perfil" onclick="clickPerfil3()">
+                <img src="imagens/e3.jpg" alt="sócia">
+                <h2>Priscyla Grabrielly Nepomuceno</h2>
+                <p id="d3">Engenheira Civil, com experiência em obras desde 2013
+                    Experiência: Priscyla Nepomuceno é uma engenheira civil com uma carreira sólida e
+                    diversificada, atuando na área de obras desde 2013. , Priscyla possui uma vasta
+                    experiência prática que inclui trabalhos em obras privadas de grandes edifícios
+                    verticais, acompanhando todas as fases, desde a fundação até o acabamento.
+                    Após sua experiência inicial no setor privado, Priscyla migrou para a área de obras
+                    públicas, onde atuou como fiscal durante um ano antes de se tornar engenheira em
+                    empresas prestadoras de serviços para prefeituras. Nessa função, foi a responsável
+                    técnica pela construção e manutenção de diversas escolas e creches,
+                    demonstrando sua habilidade em gerenciar projetos de infraestrutura pública.
+                    Com mais de 10 anos de experiência no planejamento, acompanhamento e
+                    gerenciamento de obras, Priscyla possui uma competência diferenciada tanto em
+                    projetos verticais quanto horizontais. Sua dedicação e capacidade de liderança
+                    garantem que cada projeto seja concluído com excelência, dentro dos prazos e
+                    orçamentos estipulados. </p>
+            </div>
+    </div>  
+    </main>
+
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

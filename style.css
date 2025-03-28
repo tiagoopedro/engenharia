@@ -1,0 +1,209 @@
+:root {
+    --cor0: #023138;
+    --cor1: #FEF9A5;
+    --cor2: #BCA15D;
+    --cor3: #C58C33;
+    --cor4: #F5EDE1;
+ 
+}
+
+*{ 
+margin: 0px;
+padding: 0px;
+font-family: Arial, Helvetica, sans-serif; /*inserir envolve sans*/
+color: var(--cor0);
+}
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    color: var(--cor0);
+}
+
+main {
+    max-width: 1280px;
+}
+
+p, li {
+    text-indent: 30px;
+    text-align: justify;
+    padding: 0 30px;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+h1, h2 {
+    padding: 30px 0 30px 30px;
+}
+
+#burguer {
+    background-color: rgba(0, 0, 0, 0.068);
+    color: var(--cor0);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    cursor: pointer; 
+}
+
+#burguer:hover {
+   /* background-color: var(--cor2);
+    color: white; */
+}
+
+#burguer > img {
+    height: 25px;
+    width: 25px;
+    padding: 4px; 
+}
+
+header {
+    /*background-image: linear-gradient(to bottom, #E39E9D, #A37171, #966867);*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    position: sticky; /* menu fixo no top */
+    top: 0;
+    padding: 10px 10px;
+    width: 100vw;
+}
+
+header > img {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    height: 80px;
+    width: 160px;
+    margin-left: 10px;
+}
+
+
+
+header > nav {
+    background-color: rgba(0, 0, 0, 0.027);
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end; 
+    padding: 10px;
+    color: var(--cor0);
+}
+header > nav > a {     /* corrigir texto esta em duas linhas, e colocar o texto para right */
+    display: flex;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center; 
+    padding: 12px 35vw;
+    margin: 5px;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color:var(--cor0);
+    color: var(--cor2);
+    border-radius: 10px;
+}
+
+#quem-somos > p {
+    color: var(--cor0);
+}
+
+#quem-somos > h1 {
+    padding: 40px 0 20px 30px;
+}
+
+section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 20px 0;
+    padding: 30px 30px;
+    border: 1px ridge goldenrod;
+    border-radius: 30px;
+    margin: 10px 10px;
+    box-shadow: 5px 5px 10px rgba(218, 165, 32, 0.178);
+    transition: transform 0.5s, border 0.4s; 
+}
+
+.servicos-disposicao {
+    background-color: var(--cor4);
+    width: 370px;
+    border-radius: 40px;
+    padding: 10px 0;
+    margin: 10px 10px;box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.637);
+    transition: transform 0.5s, border 0.4s; 
+}
+
+.servicos-disposicao > h3 {
+    padding: 0px 0 10px 30px;
+}
+
+.servicos-disposicao > li {
+    text-indent: 0px;
+}
+
+#slider {
+    width: 100%;
+    max-width: 2000px;
+    height: 35vw;
+    max-height: 700px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#slider img{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 800ms;
+}
+
+#slider img.selected { 
+    opacity: 1;
+}
+
+#nosso-time {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    margin: 50px 0 50px 20px;
+    border: 1px ridge goldenrod;
+}
+
+.perfil {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 350px;
+    background-color: var(--cor4);
+    padding: 20px;
+    margin: 10px; 
+}
+
+.perfil > img {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+.perfil > img:hover {
+    border: 3px solid var(--cor0);
+    border-radius: 120px;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
+    transition: transform 0.5s, border 0.4s; 
+    cursor: pointer;
+}
+
+#descricao, #d2, #d3 {
+    display: none;
+}
