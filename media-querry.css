@@ -27,9 +27,8 @@
     }
 
     #quem-somos > p {
-        color: var(--cor0);
         padding: 20px;
-        margin: 0 40px;
+        margin: 0 100px;
     }
 
     section {

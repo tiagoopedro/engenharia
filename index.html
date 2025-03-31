@@ -11,7 +11,7 @@
 <body onresize="mudouTamanho()">
     <header>
         <img src="imagens/logo1.png" alt="logo">
-        <i id="burguer" class="Icons8" onclick="clickMenu()"><img src="imagens/icone-hamburguer.png"></i>  
+        <i id="burguer" class="Icons8" onclick="clickMenu(itens)"><img src="imagens/icone-hamburguer.png"></i>  
         <nav id="itens" >
             <a href="#quem-somos">Quem Somos</a>
             <a href="#servicos-disposicao">Serviços a Disposição</a>
@@ -23,7 +23,7 @@
     <main>
         <div id="quem-somos">
             <h1>Quem Somos</h1>
-           <!-- <img src="imagens/logo-recorte.png" alt="logo">-->
+           <img src="imagens/logo-recorte.png" alt="logo">
             <p> Fundada em 2022, mas reunindo profissionais com experiência sólida em projetos
                 e serviços de engenharia, a Queiroz Nepomuceno Projeto e Construção tem
                 atuado em atividades que vão desde o pensar na solução até a realização da visão
@@ -113,7 +113,7 @@
         
         <div id="nosso-time"> 
             <h1>Nosso Time</h1>
-            <div class="perfil" onclick="clickPerfil()">
+            <div class="perfil" onclick=" clickMenu(descricao)">
                 <img src="imagens/ed1.png" alt="CEO">
                 <h2>Edmilton Queiroz</h2>
                 <p id="descricao">
@@ -132,7 +132,7 @@
                     dos resultados. </p>
             </div>
 
-            <div class="perfil" onclick="clickPerfil2()">
+            <div class="perfil" onclick="clickMenu(d2)">
                 <img src="imagens/e2.jpg" alt="diretora">
                 <h2>Isabele Nepomuceno</h2>
                 <p id="d2"> Caroline Nepomuceno é uma engenheira civil dedicada, com uma
@@ -154,7 +154,7 @@
                     eficaz na entrega de resultados de alta qualidade.  </p>
             </div>
 
-            <div class="perfil" onclick="clickPerfil3()">
+            <div class="perfil" onclick="clickMenu(d3)">
                 <img src="imagens/e3.jpg" alt="sócia">
                 <h2>Priscyla Grabrielly Nepomuceno</h2>
                 <p id="d3">Engenheira Civil, com experiência em obras desde 2013

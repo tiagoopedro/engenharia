@@ -28,38 +28,11 @@ function mudouTamanho() {
     }
 }
 
-function clickMenu() { 
-    if (itens.style.display == 'block') {
-        itens.style.display = 'none'
+function clickMenu(perfil) { 
+    if (perfil.style.display == 'block') {
+        perfil.style.display = 'none'
     } 
     else {
-        itens.style.display = 'block'
-    } 
-}
-
-function clickPerfil() { 
-    if (descricao.style.display == 'block') {
-        descricao.style.display = 'none'
-    } 
-    else {
-        descricao.style.display = 'block'
-    } 
-}
-
-function clickPerfil2() { 
-    if (d2.style.display == 'block') {
-        d2.style.display = 'none'
-    } 
-    else {
-        d2.style.display = 'block'
-    } 
-}
-
-function clickPerfil3() { 
-    if (d3.style.display == 'block') {
-        d3.style.display = 'none'
-    } 
-    else {
-        d3.style.display = 'block'
+        perfil.style.display = 'block'
     } 
 }
