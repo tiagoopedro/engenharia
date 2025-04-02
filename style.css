@@ -37,6 +37,10 @@ h1, h2 {
     padding: 30px 0 30px 30px;
 }
 
+ a {     
+    text-decoration: none;
+ }
+
 #burguer {
     background-color: rgba(0, 0, 0, 0.068);
     color: var(--cor0);
@@ -83,6 +87,8 @@ header > img {
 }
 
 header > nav {
+    margin: 10px auto 0px; 
+    width: 90vw;
     background-color: rgba(0, 0, 0, 0.027);
     border-radius: 20px;
     display: flex;
@@ -91,15 +97,13 @@ header > nav {
     padding: 10px;
     color: var(--cor0);
 }
-header > nav > a {     /* corrigir texto esta em duas linhas, e colocar o texto para right */
-    flex-flow: column wrap;
+header > nav > a {     
     text-decoration: none;
     font-weight: bold;
     align-items: center; 
-    padding: 12px 0px;
-    margin: 0px;
     border-radius: 15px;
-    transition-duration: 0.5s;
+    padding: 12px;
+    transition-duration: 0.3s;
 }
 
 nav > a:hover {
@@ -228,19 +232,37 @@ section {
 
 footer {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end; /* corrigir aqui o resto do conteudoi*/
+    flex-flow: column wrap; /*alinhar os contatos*/
+    justify-content: flex-start; /* corrigir aqui o resto do conteudoi*/
+    align-items: end;
     background-color: var(--cor0);
-    height: 300px;
     width: 100vw;
 }
 
-footer > img {
+#logo-footer {
+    width: 300px;
+
+}
+footer > a > img { /* corrigir tamanho da img*/
     height: 30px;
     width: 30px;
-    padding: 10px 5px;
+    padding: 0px 0px;
 }
 
-footer > img:hover {
+footer > a  {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin: 0px;
+    padding: 10px 20px;
+}
+
+footer > a > p {
+    text-indent: 0px;
+    padding: 5px;
+    color: white;
+}
+
+footer > a > img:hover, .contato:hover{
     filter: invert(54%) sepia(15%) saturate(1787%) hue-rotate(357deg) brightness(104%) contrast(88%);
 }

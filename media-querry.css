@@ -1,15 +1,7 @@
 @media screen and (max-width: 768px)  {
-    
-    header > nav  {     
-       margin: 10px auto 0px; 
-       width: 90vw;
-    }
-
     header > nav > a {     
         display: flex;
         flex-flow: column wrap; 
-        padding: 12px;
-        transition-duration: 0.3s;
     }
 }
 
@@ -22,10 +14,12 @@
         display: flex;
         margin-right: 10vw;
         background-color: white; 
+        width: auto;
     }
     header > nav > a {     
        text-decoration: none;
        padding: 10px;
+       transition-duration: 0.5s;
    }
     #burguer {
         display: none;
@@ -75,6 +69,7 @@
         background-color: rgba(255, 255, 255, 0.377);    
         color: rgba(255, 255, 255, 0);
     }
+    
 
  }
  
