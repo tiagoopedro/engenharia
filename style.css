@@ -67,7 +67,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(255, 255, 255);
-    position: sticky; /* menu fixo no top */
+   /* position: sticky;  menu fixo no top */
     top: 0;
     padding: 10px 10px;
     width: 100vw;
@@ -81,8 +81,6 @@ header > img {
     width: 160px;
     margin-left: 10px;
 }
-
-
 
 header > nav {
     background-color: rgba(0, 0, 0, 0.027);
@@ -229,13 +227,18 @@ section {
 }
 
 footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end; /* corrigir aqui o resto do conteudoi*/
     background-color: var(--cor0);
     height: 300px;
     width: 100vw;
 }
 
 footer > img {
-    filter: invert(1);
+    height: 30px;
+    width: 30px;
+    padding: 10px 5px;
 }
 
 footer > img:hover {
