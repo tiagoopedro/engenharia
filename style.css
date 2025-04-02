@@ -92,12 +92,12 @@ header > nav {
     color: var(--cor0);
 }
 header > nav > a {     /* corrigir texto esta em duas linhas, e colocar o texto para right */
-    display: flex;
+    flex-flow: column wrap;
     text-decoration: none;
     font-weight: bold;
     align-items: center; 
-    padding: 12px 35vw;
-    margin: 5px;
+    padding: 12px 0px;
+    margin: 0px;
     border-radius: 15px;
     transition-duration: 0.5s;
 }

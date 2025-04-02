@@ -1,30 +1,18 @@
-@media screen and (min-width: 768px) and (max-width: 992px) { 
-    header > nav {
-        background-color: rgba(0, 0, 0, 0.027);
-        border-radius: 20px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-end; 
-        padding: 10px;
-        color: var(--cor0);
-    }
-    header > nav > a {     /* corrigir texto esta em duas linhas, e colocar o texto para right */
-        display: flex;
-        text-decoration: none;
-        font-weight: bold;
-        align-items: center; 
-        padding: 12px 35vw;
-        margin: 5px;
-        border-radius: 15px;
-        transition-duration: 0.5s;
-    }
+@media screen and (max-width: 768px)  {
     
-    nav > a:hover {
-        background-color:var(--cor0);
-        color: var(--cor2);
-        border-radius: 10px;
+    header > nav  {     
+       margin: 10px auto 0px; 
+       width: 90vw;
+    }
+
+    header > nav > a {     
+        display: flex;
+        flex-flow: column wrap; 
+        padding: 12px;
+        transition-duration: 0.3s;
     }
 }
+
 @media screen and (min-width: 992px) {
     header > img {
         margin-left: 10vw;
@@ -37,11 +25,7 @@
     }
     header > nav > a {     
        text-decoration: none;
-       color: var(--cor0);
-       font-weight: bold;
-       align-items: center;
        padding: 10px;
-       transition-duration: 0.5s;
    }
     #burguer {
         display: none;
