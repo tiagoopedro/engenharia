@@ -232,35 +232,50 @@ section {
 
 footer {
     display: flex;
-    flex-flow: column wrap; /*alinhar os contatos*/
-    justify-content: flex-start; /* corrigir aqui o resto do conteudoi*/
-    align-items: end;
+    flex-flow: column wrap; 
+    align-items: center; /* corrigir aqui o resto do conteudo*/
     background-color: var(--cor0);
     width: 100vw;
 }
 
 #logo-footer {
     width: 300px;
-
-}
-footer > a > img { /* corrigir tamanho da img*/
-    height: 30px;
-    width: 30px;
-    padding: 0px 0px;
+    padding: 10px;
 }
 
 footer > a  {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
+    
     margin: 0px;
     padding: 10px 20px;
 }
 
-footer > a > p {
+.contato {
     text-indent: 0px;
-    padding: 5px;
+    padding: 5px 0px;
     color: white;
+}
+
+footer > a > img { /* corrigir tamanho da img*/
+    height: 30px;
+    width: 30px;
+    padding: 0px 3px;
+}
+
+footer > div {
+    display: flex;
+    flex-flow: column wrap;
+    margin-right: 10px; 
+    padding: 0 0 0 25px;  
+}
+
+#img-telefone {
+    margin-right: 5px;  
+}
+
+#p-telefone {
+    text-indent: 37px;
 }
 
 footer > a > img:hover, .contato:hover{
