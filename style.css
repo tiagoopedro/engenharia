@@ -84,6 +84,7 @@ header > img {
     height: 45px;
     width: 240px;
     margin-left: 10px;
+    border-right: 1px solid var(--cor0);
 }
 
 header > nav {
@@ -129,8 +130,9 @@ nav > a:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: left;
-    padding: 40px 0 20px 30px;
+    padding: 40px 0 0px 30px;
     color: var(--cor2);
+    border-bottom: 3px solid var(--cor2);
 }
 
 #quem-somos > p {
@@ -272,10 +274,11 @@ footer > div {
 
 #img-telefone {
     margin-right: 5px;  
+    height: 25px; 
 }
 
 #p-telefone {
-    text-indent: 37px;
+    text-indent: 30px;
 }
 
 footer > a > img:hover, .contato:hover{
