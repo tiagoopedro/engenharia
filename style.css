@@ -81,8 +81,8 @@ header > img {
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
-    height: 80px;
-    width: 160px;
+    height: 45px;
+    width: 240px;
     margin-left: 10px;
 }
 
