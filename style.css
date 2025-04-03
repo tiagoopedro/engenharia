@@ -65,7 +65,6 @@ h1, h2 {
 }
 
 header {
-    /*background-image: linear-gradient(to bottom, #E39E9D, #A37171, #966867);*/
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;

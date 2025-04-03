@@ -6,6 +6,7 @@
 }
 
 @media screen and (min-width: 992px) {
+
     header > img {
         margin-left: 10vw;
     }
@@ -39,11 +40,6 @@
     section {
         flex-flow: row wrap;
         justify-content: space-around;
-        background-image: url(imagens/fundos/00.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center left;
     }
     
     .servicos-disposicao {
