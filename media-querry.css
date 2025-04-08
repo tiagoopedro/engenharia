@@ -51,6 +51,12 @@
         height: 370px; /* alterar talvez retirar*/
     }
 
+
+    #slider {
+        height: 35vw;
+        max-height: 700px;    
+    }
+
     #nosso-time {
         flex-flow: row wrap;
         justify-content: space-between;

@@ -16,14 +16,13 @@ color: var(--cor0);
 
 body {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    max-width: 100vw;
     color: var(--cor0);
 }
 
-main {
-    max-width: 1280px;
-}
+
 
 p, li {
     text-indent: 30px;
@@ -108,6 +107,8 @@ nav > a:hover {
 }
 
 #quem-somos {
+
+    max-width: 1280px;
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
@@ -137,7 +138,9 @@ nav > a:hover {
     font-size: 24px;
 }
 
+
 section {
+    max-width: 1280px;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -206,10 +209,8 @@ section {
 }
 
 #slider {
-    width: 100%;
-    max-width: 2000px;
-    height: 35vw;
-    max-height: 700px;
+    width: 100vw; 
+    height: 100vh;
     margin: auto;
     position: relative;
     margin-bottom: 20px;
@@ -229,6 +230,7 @@ section {
 }
 
 #nosso-time {
+    max-width: 1280px;
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
