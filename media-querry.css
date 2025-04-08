@@ -30,10 +30,15 @@
         display: flex;
         flex-flow: row wrap;
         margin: auto;
+        align-items: center;   
+    }
+
+    #quem-somos > h1 {
+        margin-right: 37vw;
+        font-size: 40px;
     }
 
     #quem-somos > p {
-        padding: 20px;
         margin: 0 100px;
     }
 
