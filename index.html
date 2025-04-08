@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media-querry.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-querry.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href=css/swiper-bundle.min.css">
     <title>Queiroz Nepomuceno</title>
-    
+
 </head>
+
 <body onresize="mudouTamanho()">
 
     <header>
         <img src="imagens/logo1.png" alt="logo">
-        <i id="burguer" class="Icons8" onclick="clickMenu(itens)"><img src="imagens/icone-hamburguer.png"></i>  
-        <nav id="itens" >
+        <i id="burguer" class="Icons8" onclick="clickMenu(itens)"><img src="imagens/icone-hamburguer.png"></i>
+        <nav id="itens">
             <a href="#quem-somos">Quem Somos</a>
             <a href="#servicos-disposicao">Serviços a Disposição</a>
             <a href="#slider">Histórico de Atuação</a>
             <a href="#nosso-time">Nosso time</a>
-        </nav>      
+        </nav>
     </header>
-    
+
     <div>
-       <!-- <h1>NOSSOS PROJETOS</h1>-->
-        
+        <!-- <h1>NOSSOS PROJETOS</h1>-->
+
         <div id="slider">
             <img class="selected" src="imagens/c1.jpg" alt="image1">
             <img src="imagens/c2.jpg" alt="image2">
@@ -41,21 +45,22 @@
             atuado em atividades que vão desde o pensar na solução até a realização da visão
             do nosso cliente com o compromisso de fornecer soluções inovadoras e
             eficientes que atendam as suas necessidades e expectativas.</p>
-        <p>  Nossa missão é entregar produtos de qualidade, entregando projetos completos,
+        <p> Nossa missão é entregar produtos de qualidade, entregando projetos completos,
             obras diferenciadas, que combinam precisão técnica, criatividade e
             sustentabilidade. Nós nos dedicamos a criar estruturas duráveis e funcionais,
             respeitando prazos e orçamentos, sem comprometer a excelência.
             Nossa visão é nos tornarmos líderes no setor de engenharia de projetos,
             reconhecidos por nossa integridade, inovação e competência. Valorizamos a
-            confiança que nossos clientes depositam em nós e nos esforçamos para superar suas expectativas em cada projeto.</p>
+            confiança que nossos clientes depositam em nós e nos esforçamos para superar suas expectativas em cada
+            projeto.</p>
         <p> Com uma equipe de profissionais diferenciados e comprometidos, estamos
             prontos para enfrentar qualquer desafio e proporcionar resultados que fazem a
             diferença. Se você procura uma empresa de engenharia que alia experiência,
             dedicação e qualidade, a Queiroz Nepomuceno é a escolha certa.</p>
     </div>
 
-    <h1>SERVIÇOS A DISPOSIÇÃO</h1> 
-    <section>          
+    <h1>SERVIÇOS A DISPOSIÇÃO</h1>
+    <section>
         <div class="servicos-disposicao">
             <h3>Execução de Obras</h3>
             <li>Executamos obras de engenharia com excelência, atendendo a projetos
@@ -109,7 +114,7 @@
                 tomadas de decisão.</li>
         </div>
     </section>
-    
+
     <div id="clientes">
         <h1>CLIENTES JÁ ATENDIDOS</h1>
         <div id="logos">
@@ -135,16 +140,17 @@
             </ul>
         </div>
     </div>
-    
-    
-    <div id="nosso-time"> 
+
+
+    <div id="nosso-time">
         <h1>NOSSO TIME</h1>
         <div class="perfil" onclick=" clickMenu(descricao)">
             <img src="imagens/ed1.png" alt="CEO">
             <h2>Edmilton Queiroz</h2>
             <p id="descricao">
-                Engenheiro Civil, Mestrado em Engenharia Civil e Ambiental com foco em Recursos Hídricos,Especialista em Projeto e Construção de Estruturas de Aço e Madeira.
-                    Já com quase uma década de experiência, Edmilton Queiroz é um
+                Engenheiro Civil, Mestrado em Engenharia Civil e Ambiental com foco em Recursos Hídricos,Especialista em
+                Projeto e Construção de Estruturas de Aço e Madeira.
+                Já com quase uma década de experiência, Edmilton Queiroz é um
                 profissional qualificado e dedicado na área de engenharia civil. Durante sua
                 carreira, ele elaborou projetos completos para edifícios de até 4 pavimentos e
                 desenvolveu mais de 175 hectares de projetos de abastecimento. Sua expertise
@@ -177,7 +183,7 @@
                 Caroline possui uma visão abrangente e habilidades técnicas robustas, essenciais
                 para garantir a excelência em cada projeto que gerencia. Sua capacidade de
                 adaptar-se a diferentes tipos de obras e desafios a torna uma profissional valiosa e
-                eficaz na entrega de resultados de alta qualidade.  </p>
+                eficaz na entrega de resultados de alta qualidade. </p>
         </div>
 
         <div class="perfil" onclick="clickMenu(d3)">
@@ -199,7 +205,7 @@
                 garantem que cada projeto seja concluído com excelência, dentro dos prazos e
                 orçamentos estipulados. </p>
         </div>
-    </div>  
+    </div>
 
 
     <footer>
@@ -207,7 +213,7 @@
 
         <a href="mailto:queiroznepomuceno@gmail.com">
             <img src="icones/e-mail.png" alt="email">
-            <p class="contato">  queiroznepomuceno@gmail.com</p>
+            <p class="contato"> queiroznepomuceno@gmail.com</p>
         </a>
 
         <a href="https://www.instagram.com/queiroznepomuceno/" target="_blank">
@@ -215,24 +221,30 @@
             <p class="contato">@queiroznepomuceno</p>
         </a>
 
-        <div> 
+        <div>
             <a href=" https://wa.me/5581997190535" target="_blank">
                 <p class="contato">
-                <img id="img-telefone" src="icones/telefone.png" alt="telefone">(81) 99719-0535</p></a>
-            
+                    <img id="img-telefone" src="icones/telefone.png" alt="telefone">(81) 99719-0535
+                </p>
+            </a>
+
             <a href=" https://wa.me/5581997658185" target="_blank">
-                <p class="contato" id="p-telefone">(81) 99765-8185</p> </a>
+                <p class="contato" id="p-telefone">(81) 99765-8185</p>
+            </a>
             <a href=" https://wa.me/5581996551785" target="_blank">
-                <p class="contato" id="p-telefone">(81) 99655-1785</p> </a>
+                <p class="contato" id="p-telefone">(81) 99655-1785</p>
+            </a>
         </div>
-        
-        
+
+
 
         <!-- <p>© Copyright 2025</p> -->
 
     </footer>
-   
 
-    <script src="script.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
 </body>
+
 </html>

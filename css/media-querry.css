@@ -30,7 +30,7 @@
         display: flex;
         flex-flow: row wrap;
         margin: auto;
-        align-items: center;   
+        align-items: center;        
     }
 
     #quem-somos > h1 {
