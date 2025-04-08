@@ -34,7 +34,8 @@
     }
 
     #quem-somos > h1 {
-        margin-right: 37vw;
+        width: 340px;
+        margin-right: 35vw;
         font-size: 40px;
     }
 
