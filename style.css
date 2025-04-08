@@ -53,11 +53,6 @@ h1, h2 {
     cursor: pointer; 
 }
 
-#burguer:hover {
-   /* background-color: var(--cor2);
-    color: white; */
-}
-
 #burguer > img {
     height: 25px;
     width: 25px;
@@ -121,6 +116,7 @@ nav > a:hover {
 }
 
 #quem-somos > img {
+    margin: auto;
     height: 250px;
     width: 450px;
 }
@@ -132,6 +128,7 @@ nav > a:hover {
     padding: 40px 0 0px 30px;
     color: var(--cor2);
     border-bottom: 3px solid var(--cor2);
+    margin-right: 25vw;
 }
 
 #quem-somos > p {
