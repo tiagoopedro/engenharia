@@ -46,23 +46,15 @@
  /* slide de serviços */
 
 .swiper { /*section*/
-    width: 90vw;
-    padding: 30px 50px;
-    border: 1px ridge goldenrod;
-    border-radius: 30px;
-    box-shadow: 5px 5px 10px rgba(218, 165, 32, 0.178);
-    transition: transform 0.5s, border 0.4s;
+    width: 75vw;
+    padding: 30px 50px;   
 }
 
 .swiper-slide { /*conteudo servicos a disposicao*/
     font-size: 18px;
-    background-color: var(--cor4);
     height: auto;
-    border-radius: 40px;
     padding: 10px 0;
     height: auto;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.637);
-    cursor: grab;
 }
 
 .swiper-slide:active {
@@ -92,12 +84,12 @@
         justify-content: space-between;
         margin-left:0px;
         padding: 30px;
-        background-image: url(imagens/fundos/07.jpg);
+        background-image: url(../imagens/fundos/07.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
         background-position: center left; /*opcional*/     
-        background-color: darkolivegreen;
+        
     }
 
     #nosso-time > h1 {

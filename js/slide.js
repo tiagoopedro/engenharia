@@ -1,5 +1,5 @@
   var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 2,
+    slidesPerView: 4,
     spaceBetween: 40,
     navigation: {
       nextEl: ".swiper-button-next",
@@ -9,10 +9,10 @@
       el: ".swiper-pagination",
       clickable: true,
     },
-    autoplay: {
+   /* autoplay: {
       delay: 300000,
       disableOnInteraction: false,
-    },
+    },*/
   });
  
 
