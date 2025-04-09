@@ -1,27 +1,30 @@
-@media screen and (max-width: 768px)  {
-    header > nav > a {     
+@media screen and (max-width: 768px) {
+    header>nav>a {
         display: flex;
-        flex-flow: column wrap; 
+        flex-flow: column wrap;
     }
 }
 
 @media screen and (min-width: 992px) {
 
-    header > img {
+    header>img {
         margin-left: 10vw;
     }
-   header > nav {
-        display: block; 
+
+    header>nav {
+        display: block;
         display: flex;
         margin-right: 10vw;
-        background-color: white; 
+        background-color: white;
         width: auto;
     }
-    header > nav > a {     
-       text-decoration: none;
-       padding: 10px;
-       transition-duration: 0.5s;
-   }
+
+    header>nav>a {
+        text-decoration: none;
+        padding: 10px;
+        transition-duration: 0.5s;
+    }
+
     #burguer {
         display: none;
     }
@@ -30,85 +33,112 @@
         display: flex;
         flex-flow: row wrap;
         margin: auto;
-        align-items: center;        
+        align-items: center;
     }
 
-    #quem-somos > h1 {
+    #quem-somos>h1 {
         width: 340px;
         margin-right: 35vw;
         font-size: 40px;
     }
 
-    #quem-somos > p {
+    #quem-somos>p {
         margin: 0 100px;
     }
 
- /* slide de serviços */
+    /* slide de serviços */
 
-.swiper { /*section*/
-    width: 75vw;
-    padding: 30px 50px;   
+#transicao {  /* testando os background */
+    width:100vw;
+    height: 25vw;
+    background-image: url(../imagens/fundos/site/8.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
-.swiper-slide { /*conteudo servicos a disposicao*/
-    font-size: 18px;
-    height: auto;
-    padding: 10px 0;
-    height: auto;
-}
+    #div-servicos {  /* testando os background */
+        width: 100vw;
+        height: 25vw;
+        background-image: url(../imagens/fundos/site/88.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top left;
+        
+    }
 
-.swiper-slide:active {
-    cursor: grabbing;
-}
+    .swiper {
+        /*section*/
+        width: 75vw;
+        padding: 30px 50px;
+    }
 
-.swiper-slide > h3 {
-    padding: 20px 20px;
-    text-align: center;
-}
+    .swiper-slide {
+        /*conteudo servicos a disposicao*/
+        font-size: 18px;
+        height: auto;
+        padding: 10px 0;
+        height: auto;  
+        background-color: #f5ede1d8;;   
+    }
 
-.swiper-slide > li {
-    text-indent: 20px;
-    padding: 0 20px 10px;
-    text-align: justify;
-}
+    .swiper-slide:active {
+        cursor: grabbing;
+    }
 
-/* slide de serviços fim */
+    .swiper-slide>h3 {
+        padding: 20px 20px;
+        text-align: center;
+    }
+
+    .swiper-slide>li {
+        text-indent: 20px;
+        padding: 0 20px 10px;
+        text-align: justify;
+    }
+
+    /* slide de serviços fim */
 
     #slider {
         height: 35vw;
-        max-height: 700px;    
+        max-height: 700px;
     }
 
     #nosso-time {
         flex-flow: row wrap;
         justify-content: space-between;
-        margin-left:0px;
+        margin-left: 0px;
         padding: 30px;
         background-image: url(../imagens/fundos/07.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        background-position: center left; /*opcional*/     
-        
+        background-position: center left;
+        /*opcional*/
+
     }
 
-    #nosso-time > h1 {
-        margin-right: 700px; /* corrigir*/
+    #nosso-time>h1 {
+        margin-right: 700px;
+        /* corrigir*/
     }
 
-    #nosso-time > h1, h2, p {
+    #nosso-time>h1,
+    h2,
+    p {
         color: white;
     }
+
     .perfil {
         padding: 10px;
-        background-color: rgba(255, 255, 255, 0.377);    
+        background-color: rgba(255, 255, 255, 0.377);
         color: rgba(255, 255, 255, 0);
     }
 
     footer {
         display: flex;
-        flex-flow: row wrap; 
-        justify-content: space-evenly; /* corrigir aqui o resto do conteudo*/
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        /* corrigir aqui o resto do conteudo*/
         align-items: normal;
     }
 
@@ -116,5 +146,4 @@
         border-right: 2px solid var(--cor4);
     }
 
- }
- 
+}
