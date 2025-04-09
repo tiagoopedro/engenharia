@@ -36,4 +36,3 @@ function clickMenu(perfil) {
         perfil.style.display = 'block'
     } 
 }
-
