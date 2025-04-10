@@ -58,8 +58,9 @@
         font-size: 18px;
         height: auto;
         padding: 10px 0;
-        height: auto;  
-        background-color: #f5ede1d8;;   
+        height: auto;
+        background-color: #f5ede1d8;
+        ;
     }
 
     .swiper-slide:active {
@@ -90,13 +91,15 @@
         justify-content: center;
         margin-left: 0px;
         padding: 30px;
-        background-position: right; /*escolher entre left e right*/
+        background-position: right;
+        /*escolher entre left e right*/
     }
 
     #nosso-time>h1 {
-        margin-right: 75vw; /*    corrigir*/
+        margin-right: 75vw;
+        /*    corrigir*/
         padding-bottom: 0;
-      
+
     }
 
     .perfil {
@@ -108,12 +111,13 @@
         color: rgba(235, 29, 29, 0);
         border-radius: 50px;
     }
+
     .perfil>h2 {
         padding-left: 0;
     }
 
     footer {
-        background: linear-gradient(to left,#09322C,#0A382E, #094231, #113C33, #113C33 );
+        margin-top: 360px;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;

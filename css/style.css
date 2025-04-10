@@ -295,10 +295,10 @@ p {
 }
 
 footer {
+    background: none;
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
-    background-color: var(--cor0);   
+    align-items: center; 
     width: 100vw;
 }
 
