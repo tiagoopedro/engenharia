@@ -31,14 +31,13 @@
 
     #quem-somos {
         display: flex;
-        flex-flow: row wrap;
-        margin: auto;
-        align-items: center;
+        flex-flow: column wrap;
+        align-items: flex-start;
     }
 
     #quem-somos>h1 {
         width: 340px;
-        margin-right: 35vw;
+        margin-right: 0;
         font-size: 40px;
     }
 
@@ -110,6 +109,7 @@
         background-color: rgba(255, 255, 255, 0.192);
         color: rgba(235, 29, 29, 0);
         border-radius: 50px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.637);
     }
 
     .perfil>h2 {
@@ -125,8 +125,5 @@
         align-items: normal;
     }
 
-    #logo-footer {
-        border-right: 2px solid var(--cor4);
-    }
 
 }
