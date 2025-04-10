@@ -295,6 +295,7 @@ p {
 }
 
 footer {
+    margin-top: 150px;
     background: none;
     display: flex;
     flex-flow: column wrap;
