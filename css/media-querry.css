@@ -47,25 +47,6 @@
     }
 
     /* slide de serviços */
-
-#transicao {  /* testando os background */
-    width:100vw;
-    height: 25vw;
-    background-image: url(../imagens/fundos/site/8.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-}
-
-    #div-servicos {  /* testando os background */
-        width: 100vw;
-        height: 25vw;
-        background-image: url(../imagens/fundos/site/88.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top left;
-        
-    }
-
     .swiper {
         /*section*/
         width: 75vw;
@@ -99,42 +80,40 @@
     /* slide de serviços fim */
 
     #slider {
+        width: 100vw;
         height: 35vw;
-        max-height: 700px;
     }
 
     #nosso-time {
+        min-height: 1000px;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: center;
         margin-left: 0px;
         padding: 30px;
-        background-image: url(../imagens/fundos/07.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center left;
-        /*opcional*/
-
+        background-position: right; /*escolher entre left e right*/
     }
 
     #nosso-time>h1 {
-        margin-right: 700px;
-        /* corrigir*/
-    }
-
-    #nosso-time>h1,
-    h2,
-    p {
-        color: white;
+        margin-right: 75vw; /*    corrigir*/
+        padding-bottom: 0;
+      
     }
 
     .perfil {
-        padding: 10px;
-        background-color: rgba(255, 255, 255, 0.377);
-        color: rgba(255, 255, 255, 0);
+        padding: 20px;
+        margin: 60px;
+        max-width: 600px;
+        width: auto;
+        background-color: rgba(255, 255, 255, 0.192);
+        color: rgba(235, 29, 29, 0);
+        border-radius: 50px;
+    }
+    .perfil>h2 {
+        padding-left: 0;
     }
 
     footer {
+        background: linear-gradient(to left,#09322C,#0A382E, #094231, #113C33, #113C33 );
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;

@@ -4,14 +4,15 @@
     --cor2: #BCA15D;
     --cor3: #C58C33;
     --cor4: #F5EDE1;
- 
+
 }
 
-*{ 
-margin: 0px;
-padding: 0px;
-font-family: Arial, Helvetica, sans-serif; /*inserir envolve sans*/
-color: var(--cor0);
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    /*inserir envolve sans*/
+    color: var(--cor0);
 }
 
 body {
@@ -22,7 +23,8 @@ body {
 }
 
 
-p, li {
+p,
+li {
     text-indent: 30px;
     text-align: justify;
     padding: 0 30px;
@@ -30,14 +32,15 @@ p, li {
     line-height: 1.6em;
 }
 
-h1, h2 {
+h1,
+h2 {
     text-indent: 30px;
     padding: 30px 0 30px 30px;
 }
 
- a {     
+a {
     text-decoration: none;
- }
+}
 
 #burguer {
     background-color: rgba(0, 0, 0, 0.068);
@@ -48,13 +51,13 @@ h1, h2 {
     width: 40px;
     height: 40px;
     align-items: center;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
-#burguer > img {
+#burguer>img {
     height: 25px;
     width: 25px;
-    padding: 4px; 
+    padding: 4px;
 }
 
 header {
@@ -63,13 +66,13 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(255, 255, 255);
-   /* position: sticky;  menu fixo no top */
+    /* position: sticky;  menu fixo no top */
     top: 0;
     padding: 10px 10px;
     width: 100vw;
 }
 
-header > img {
+header>img {
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
@@ -79,28 +82,29 @@ header > img {
     border-right: 1px solid var(--cor0);
 }
 
-header > nav {
-    margin: 10px auto 0px; 
+header>nav {
+    margin: 10px auto 0px;
     width: 90vw;
     background-color: rgba(0, 0, 0, 0.027);
     border-radius: 20px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     padding: 10px;
     color: var(--cor0);
 }
-header > nav > a {     
+
+header>nav>a {
     text-decoration: none;
     font-weight: bold;
-    align-items: center; 
+    align-items: center;
     border-radius: 15px;
     padding: 12px;
     transition-duration: 0.3s;
 }
 
-nav > a:hover {
-    background-color:var(--cor0);
+nav>a:hover {
+    background-color: var(--cor0);
     color: var(--cor2);
     border-radius: 10px;
 }
@@ -110,17 +114,17 @@ nav > a:hover {
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
-    background-color: var(--cor0); 
+    background-color: var(--cor0);
     padding-bottom: 20px;
 }
 
-#quem-somos > img {
+#quem-somos>img {
     margin: auto;
     height: 250px;
     width: 450px;
 }
 
-#quem-somos > h1 {
+#quem-somos>h1 {
     display: flex;
     flex-flow: row wrap;
     justify-content: left;
@@ -130,7 +134,7 @@ nav > a:hover {
     min-width: 280px;
 }
 
-#quem-somos > p {
+#quem-somos>p {
     color: var(--cor2);
     padding: 20px;
     margin: 0 30px;
@@ -139,13 +143,15 @@ nav > a:hover {
 
 /* slide de serviços */
 
-.swiper { /*section*/ 
+.swiper {
+    /*section*/
     width: 90vw;
-    padding: 30px 50px;   
+    padding: 30px 50px;
     transition: transform 0.5s, border 0.4s;
 }
 
-.swiper-slide { /*conteudo servicos a disposicao*/ 
+.swiper-slide {
+    /*conteudo servicos a disposicao*/
     font-size: 18px;
     background-color: var(--cor4);
     height: auto;
@@ -161,12 +167,12 @@ nav > a:hover {
     cursor: grabbing;
 }
 
-.swiper-slide > h3 {
+.swiper-slide>h3 {
     padding: 20px 20px;
     text-align: center;
 }
 
-.swiper-slide > li {
+.swiper-slide>li {
     text-indent: 20px;
     padding: 0 20px 10px;
     text-align: justify;
@@ -203,7 +209,7 @@ nav > a:hover {
     animation: 20s infinite slide linear;
 }
 
-#logos  img {
+#logos img {
     width: 150px;
     margin: 20px;
 }
@@ -212,20 +218,21 @@ nav > a:hover {
     from {
         transform: translateX(0px);
     }
+
     to {
         transform: translateX(-2040px);
-    }   
+    }
 }
 
 #slider {
-    width: 100vw; 
+    width: 100vw;
     height: 100vh;
     margin: auto;
     position: relative;
     margin-bottom: 20px;
 }
 
-#slider img{
+#slider img {
     opacity: 0;
     position: absolute;
     width: 100%;
@@ -234,17 +241,27 @@ nav > a:hover {
     transition: opacity 800ms;
 }
 
-#slider img.selected { 
+#slider img.selected {
     opacity: 1;
 }
 
 #nosso-time {
-    max-width: 1280px;
+    width: 100vw;
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
-    margin: 50px 0 50px 20px;
-    border: 1px ridge goldenrod;
+    margin: 50px 0 0px 0px;
+    background-image: url(../imagens/fundos/site/13.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left;
+}
+
+#nosso-time>h1,
+h2,
+p {
+    color: white;
 }
 
 .perfil {
@@ -252,35 +269,36 @@ nav > a:hover {
     flex-flow: column wrap;
     justify-content: center;
     width: 350px;
-    background-color: var(--cor4);
     padding: 20px;
-    margin: 10px; 
+    margin: 10px;
 }
 
-.perfil > img {
+.perfil>img {
     height: 200px;
     width: 200px;
     margin: auto;
 }
 
-.perfil > img:hover {
-    border: 3px solid var(--cor0);
+.perfil>img:hover {
+    border: 3px solid white;
     border-radius: 120px;
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
-    transition: transform 0.5s, border 0.4s; 
+    transition: transform 0.5s, border 0.2s;
     cursor: pointer;
 }
 
-#descricao, #d2, #d3 {
+#descricao,
+#d2,
+#d3 {
     display: none;
 }
 
 footer {
     display: flex;
-    flex-flow: column wrap; 
-    align-items: center; /* corrigir aqui o resto do conteudo*/
-    background-color: var(--cor0);
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: var(--cor0);   
     width: 100vw;
 }
 
@@ -289,10 +307,9 @@ footer {
     padding: 10px;
 }
 
-footer > a  {
+footer>a {
     display: flex;
     flex-flow: row wrap;
-    
     margin: 0px;
     padding: 10px 20px;
 }
@@ -303,30 +320,30 @@ footer > a  {
     color: white;
 }
 
-footer > a > img { /* corrigir tamanho da img*/
+footer>a>img {
+    /* corrigir tamanho da img*/
     height: 30px;
     width: 30px;
     padding: 0px 3px;
 }
 
-footer > div {
+footer>div {
     display: flex;
     flex-flow: column wrap;
-    margin-right: 10px; 
-    padding: 0 0 0 25px;  
+    margin-right: 10px;
+    padding: 0 0 0 25px;
 }
 
 #img-telefone {
-    margin-right: 5px;  
-    height: 25px; 
+    margin-right: 5px;
+    height: 25px;
 }
 
 #p-telefone {
     text-indent: 30px;
 }
 
-footer > a > img:hover, .contato:hover{
+footer>a>img:hover,
+.contato:hover {
     filter: invert(54%) sepia(15%) saturate(1787%) hue-rotate(357deg) brightness(104%) contrast(88%);
 }
-
-
