@@ -109,18 +109,49 @@ nav>a:hover {
     border-radius: 10px;
 }
 
-#fundo-quem-somos{
+@keyframes slide {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(-2040px);
+    }
+}
+
+#slider {
     width: 100vw;
-    background-color: var(--cor0);
+    height: 100vh;
+    margin: auto;
+    position: relative;
+}
+
+#slider img {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 800ms;
+}
+
+#slider img.selected {
+    opacity: 1;
+}
+
+#fundo-quem-somos {
+    width: 100vw;
+    background-color: #09372D; /*era var 0 */
     display: flex;
     flex-flow: column;
     align-items: center;
 }
+
 #quem-somos {
     max-width: 1280px;
     display: flex;
     flex-flow: column wrap;
-    align-items: flex-start; 
+    align-items: flex-start;
     padding-bottom: 20px;
 }
 
@@ -220,36 +251,6 @@ nav>a:hover {
     margin: 20px;
 }
 
-@keyframes slide {
-    from {
-        transform: translateX(0px);
-    }
-
-    to {
-        transform: translateX(-2040px);
-    }
-}
-
-#slider {
-    width: 100vw;
-    height: 100vh;
-    margin: auto;
-    position: relative;
-    margin-bottom: 20px;
-}
-
-#slider img {
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 800ms;
-}
-
-#slider img.selected {
-    opacity: 1;
-}
 
 #nosso-time {
     width: 100vw;
@@ -288,6 +289,7 @@ p {
 .perfil:hover {
     background: linear-gradient(to top, rgba(255, 255, 255, 0), #738754, rgba(255, 255, 255, 0));
 }
+
 .perfil>img:hover {
     border: 3px solid white;
     border-radius: 120px;
@@ -296,7 +298,7 @@ p {
     transition: transform 0.5s, border 0.2s;
     cursor: pointer;
     height: 240px;
-    width: 240px;    
+    width: 240px;
 }
 
 #descricao,
@@ -310,7 +312,7 @@ footer {
     background: none;
     display: flex;
     flex-flow: column wrap;
-    align-items: center; 
+    align-items: center;
     width: 100vw;
 }
 
@@ -358,4 +360,5 @@ footer>div {
 footer>a>img:hover,
 .contato:hover {
     filter: invert(54%) sepia(15%) saturate(1787%) hue-rotate(357deg) brightness(104%) contrast(88%);
+    /*  filter:brightness(0) saturate(100%) invert(52%) sepia(21%) saturate(601%) hue-rotate(42deg) brightness(92%) contrast(94%)*/
 }
