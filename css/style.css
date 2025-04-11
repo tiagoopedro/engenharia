@@ -287,7 +287,7 @@ nav>a:hover {
     width: 100vw;
     display: flex;
     flex-flow: column wrap;
-    align-items: flex-start;
+    align-items: center;
     margin: 50px 0 0px 0px;
     background-image: url(../imagens/fundos/site/13.jpg);
     background-repeat: no-repeat;
@@ -326,7 +326,7 @@ p {
     border-radius: 120px;
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
-    transition: transform 0.5s, border 0.2s;
+    transition: transform 2.0s, border 0.2s;
     cursor: pointer;
     height: 240px;
     width: 240px;
