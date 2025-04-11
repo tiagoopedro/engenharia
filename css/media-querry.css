@@ -94,6 +94,13 @@
     }
 
     /* slide de serviços */
+    body > h1 {
+        font-size: 30px;
+        padding-bottom: 0;
+        border-bottom: 2px solid var(--cor0);
+        min-width: 460px;
+    }
+
     .swiper {
         /*section*/
         width: 75vw;
@@ -132,6 +139,11 @@
     }
 
     /* slide de serviços fim */
+
+    #clientes h1 {
+        font-size: 30px;
+    }
+    
 
     #logos img {
         width: 150px;
