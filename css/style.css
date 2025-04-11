@@ -18,8 +18,9 @@
 body {
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
+    align-items: flex-start;
     color: var(--cor0);
+    overflow-x: hidden;
 }
 
 
@@ -69,7 +70,7 @@ header {
     /* position: sticky;  menu fixo no top */
     top: 0;
     padding: 10px 10px;
-    width: 100vw;
+    width: 95vw;
 }
 
 header>img {
@@ -214,8 +215,9 @@ nav>a:hover {
 .swiper {
     /*section*/
     width: 90vw;
-    padding: 30px 50px;
+    padding: 30px;
     transition: transform 0.5s, border 0.4s;
+    overflow: hidden;
 }
 
 .swiper-slide {
@@ -226,7 +228,6 @@ nav>a:hover {
     border-radius: 40px;
     padding: 10px 0;
     margin: 0px;
-    height: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.637);
     cursor: grab;
 }
@@ -246,12 +247,18 @@ nav>a:hover {
     text-align: justify;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+    display: none;
+}
+
 /* slide de serviços fim */
 
 #clientes {
     display: grid;
     place-content: center;
     width: 100vw;
+    
 }
 
 #clientes h1 {
@@ -278,7 +285,7 @@ nav>a:hover {
 }
 
 #logos img {
-    width: 150px;
+    width: 120px;
     margin: 20px;
 }
 
@@ -304,8 +311,7 @@ p {
 
 .perfil {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    flex-flow: column wrap; 
     width: 350px;
     padding: 20px;
     margin: 10px;
@@ -313,12 +319,13 @@ p {
 
 .perfil>img {
     height: 200px;
-    width: 200px;
+    width: 200px;   
     margin: auto;
 }
 
 .perfil:hover {
     background: linear-gradient(to top, rgba(255, 255, 255, 0), #738754, rgba(255, 255, 255, 0));
+    height: fit-content;
 }
 
 .perfil>img:hover {
