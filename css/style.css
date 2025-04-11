@@ -285,6 +285,9 @@ p {
     margin: auto;
 }
 
+.perfil:hover {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), #738754, rgba(255, 255, 255, 0));
+}
 .perfil>img:hover {
     border: 3px solid white;
     border-radius: 120px;
@@ -292,6 +295,8 @@ p {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
     transition: transform 0.5s, border 0.2s;
     cursor: pointer;
+    height: 240px;
+    width: 240px;    
 }
 
 #descricao,
