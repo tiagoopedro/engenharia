@@ -79,8 +79,9 @@ header>img {
     align-items: flex-start;
     height: 45px;
     width: 240px;
-    margin-left: 10px;
-    border-right: 1px solid var(--cor0);
+    padding-left: 2px;
+    margin-right: 10px;
+    border-left: 1px solid var(--cor0);
 }
 
 header>nav {

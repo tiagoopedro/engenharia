@@ -9,6 +9,7 @@
 
     header>img {
         margin-left: 10vw;
+        border-right: 1px solid var(--cor0);
     }
 
     header>nav {
