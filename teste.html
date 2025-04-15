@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href=css/swiper-bundle.min.css">
+  <link rel="stylesheet" href=css/swiper-bundle.min.css">
 
   <!-- Demo styles -->
   <style>
@@ -27,6 +27,9 @@
     }
 
     .burguer {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
       width: 100%;
       height: 100%;
     }
@@ -45,7 +48,8 @@
       width: 70%;
       max-width: 320px;
 
-      background-color: #09372D;;
+      background-color: #09372D;
+      ;
       color: #fff;
     }
 
@@ -57,6 +61,7 @@
       position: absolute;
       top: 0px;
       left: 0px;
+      
 
       padding: 15px;
 
@@ -65,7 +70,7 @@
       -webkit-transition: 0.3s;
       transition: 0.3s;
 
-      background-color: #023138;
+      background-color: rgba(0, 0, 0, 0.027);
 
       /*margin: 14px;
 			border-radius: 5px;*/
@@ -84,10 +89,10 @@
       display: block;
 
       width: 50px;
-      height: 5px;
+      height: 3px;
 
       margin: 10px auto;
-      background-color: #fff;
+      background-color: #09372D;
 
       border-radius: 10px;
 
@@ -142,33 +147,38 @@
       -ms-transform: translateY(-13.5px) rotate(40.5deg);
       transform: translateY(-13.5px) rotate(40.5deg);
     }
+
     nav {
-    margin: 50px auto 0px;
-    width: 90vw;
-    background-color: rgba(0, 0, 0, 0.027);
-    border-radius: 20px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding: 0px;
-    color: #023138;
-}
+      margin: 50px auto 0px;
+      width: 90vw;
+      background-color: rgba(0, 0, 0, 0.027);
+      border-radius: 20px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      padding: 0px;
+      color: #023138;
+    }
 
-nav>a {
-    text-decoration: none;
-    font-weight: bold;
-    align-items: center;
-    border-radius: 15px;
-    padding: 12px 40px;
-    transition-duration: 0.3s;
-    color: white;
-}
+    nav>a {
+      text-decoration: none;
+      font-weight: bold;
+      align-items: center;
+      border-radius: 15px;
+      padding: 12px 40px;
+      transition-duration: 0.3s;
+      color: white;
+    }
 
-nav>a:hover {
-    background-color: #BCA15D;
-    border-radius: 10px;
-}
-
+    nav>a:hover {
+      background-color: #BCA15D;
+      border-radius: 10px;
+    }
+    #logo-header {
+      margin-left: 85px;
+      width: 280px;
+      height: 55px;
+    }
   </style>
 </head>
 
@@ -176,19 +186,21 @@ nav>a:hover {
   <!-- Swiper -->
   <div class="burguer">
     <div class="swiper-wrapper">
-      <div class="swiper-slide menu"><nav id="itens">
-        <a href="#quem-somos">Quem Somos</a>
-        <a href="#servicos-disposicao">Serviços a Disposição</a>
-        <a href="#slider">Histórico de Atuação</a>
-        <a href="#nosso-time">Nosso time</a>
-    </nav></div>
+      <div class="swiper-slide menu">
+        <nav id="itens">
+          <a href="#quem-somos">Quem Somos</a>
+          <a href="#servicos-disposicao">Serviços a Disposição</a>
+          <a href="#slider">Histórico de Atuação</a>
+          <a href="#nosso-time">Nosso time</a>
+        </nav>
+      </div>
       <div class="swiper-slide content">
         <div class="menu-button">
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
         </div>
-        Content slide
+          <img src="imagens/logo1.png" alt="logo" id="logo-header">  
       </div>
     </div>
   </div>
