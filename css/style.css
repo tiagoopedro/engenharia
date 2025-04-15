@@ -212,7 +212,7 @@ nav>a:hover {
 }
 
 /* slide de serviços */
-body > h1 {
+#h1-servicos-disposicao {
     font-size: 26px;
 }
 .swiper {
@@ -223,7 +223,7 @@ body > h1 {
     overflow: hidden;
 }
 
-.swiper-slide {
+.servicos-disposicao {
     /*conteudo servicos a disposicao*/
     font-size: 18px;
     background-color: var(--cor4);
@@ -235,16 +235,16 @@ body > h1 {
     cursor: grab;
 }
 
-.swiper-slide:active {
+.servicos-disposicao:active {
     cursor: grabbing;
 }
 
-.swiper-slide>h3 {
+.servicos-disposicao>h3 {
     padding: 20px 20px;
     text-align: center;
 }
 
-.swiper-slide>li {
+.servicos-disposicao>li {
     text-indent: 20px;
     padding: 0 20px 10px;
     text-align: justify;
