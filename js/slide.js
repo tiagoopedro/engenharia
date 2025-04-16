@@ -1,4 +1,5 @@
- function numeroSlide() { 
+//serviços a disposicao
+function numeroSlide() { 
     if (window.innerWidth >= 768) {
    var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
@@ -62,6 +63,26 @@
       },
     });
  
-  
+
+//slide inicial historico de serviços 
+/*
+var swiper = new Swiper(".mySwiper-slide-historico", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+  },
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+  },
+});
+  */
  
 
