@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href=css/swiper-bundle.min.css">
+
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-start;
+            
+        }
+
+        .teste {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+
+        .swiper-slide>h1 {
+            
+        }
+
+        .p-historico {
+            display: flex;
+            flex-flow: row;
+            justify-content: flex-start;
+            text-align: justify;
+            width: 500px;
+            background-color: burlywood;
+        }
+
+        .div-img {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            width: 70%;
+            height: 1000px;
+            background-color: aqua;
+        }
+
+        .img-historico {
+            display: flex;
+            width: 500px;
+            height: 400px;
+            margin: 10px;
+        }
+
+        /* .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        } */
+
+        .swiper {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <h1>Obras e Reformas</h1>
+                <div class="teste">
+                    <div>
+                        <p class="p-historico">Nossa equipe de engenheiros possui experiência na execução e fiscalização
+                            de
+                            obras comerciais, industriais, residenciais e de infraestrutura. A empresa possui
+                            profissionais especializados nos diversos métodos construtivos. Nossas reformas
+                            destacam-se pela produção e qualidade no serviço, em especial na execução de
+                            pintura, piso vinílico, carpetes, forro (drywall, mineral e de gesso com película de
+                            pvc) e paredes de drywall.</p>
+                    </div>
+                    <div class="div-img">
+                        <img class="img-historico" src="imagens/historico servico/0.png" alt="img1">
+                        <img class="img-historico" src="imagens/historico servico/1.png" alt="img2">
+                        <img class="img-historico" src="imagens/historico servico/2.png" alt="img3">
+                        <img class="img-historico" src="imagens/historico servico/3.png" alt="img4">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
