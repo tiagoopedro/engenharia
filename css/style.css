@@ -112,6 +112,12 @@ header>#itens>a {
     border-radius: 10px;
 }
 
+.swiper-historico {
+    display: none;
+}
+
+/*
+
 @keyframes slide {
     from {
         transform: translateX(0px);
@@ -140,7 +146,7 @@ header>#itens>a {
 
 #slider img.selected {
     opacity: 1;
-}
+} */
 
 #fundo-quem-somos {
     width: 100vw;
@@ -406,7 +412,4 @@ footer>a>img:hover,
     /*  filter:brightness(0) saturate(100%) invert(52%) sepia(21%) saturate(601%) hue-rotate(42deg) brightness(92%) contrast(94%)*/
 }
 
-.swiper-historico {
-    display: none;
-}
 
