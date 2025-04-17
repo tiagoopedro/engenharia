@@ -65,7 +65,7 @@ function numeroSlide() {
  
 
 //slide inicial historico de serviços 
-/*
+
 var swiper = new Swiper(".mySwiper-slide-historico", {
   slidesPerView: 1,
   spaceBetween: 30,
@@ -78,11 +78,11 @@ var swiper = new Swiper(".mySwiper-slide-historico", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
   },
-  autoplay: {
+ /* autoplay: {
       delay: 5000,
       disableOnInteraction: false,
-  },
+  },*/
 });
-  */
+
  
 

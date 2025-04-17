@@ -113,7 +113,7 @@
         background-position: center bottom;
     }
 
-    .swiper-slide {
+    .servicos-disposicao {
         /*conteudo servicos a disposicao*/
         font-size: 18px;
         height: auto;
@@ -123,16 +123,16 @@
         ;
     }
 
-    .swiper-slide:active {
+    .servicos-disposicao:active {
         cursor: grabbing;
     }
 
-    .swiper-slide>h3 {
+    .servicos-disposicao>h3 {
         padding: 20px 20px;
         text-align: center;
     }
 
-    .swiper-slide>li {
+    .servicos-disposicao>li {
         text-indent: 20px;
         padding: 0 20px 10px;
         text-align: justify;
@@ -203,7 +203,12 @@
         align-items: normal;
     }
     
-    /*
+    .swiper-historico {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    
     #slide-capa {
         background-image: url(../imagens/historico\ servico/capa-editada.png);
         background-repeat: no-repeat;
@@ -228,7 +233,7 @@
     
     }
     
-    .swiper-slide {
+    .div-slide-historico {
         text-align: center;
         font-size: 18px;
         display: flex;
@@ -236,17 +241,17 @@
         justify-content: flex-start;
         align-items: center;
         color: white;
-        background-image: url(../imagens/fundos/aleatorio.webp);
+        background-image: url(../imagens/historico\ servico/fundo-madeira.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
     }
     
-    .swiper-slide>h1 {
+    .div-slide-historico>h1 {
         color: white;
     }
 
-    .swiper-slide>h3 {
+    .div-slide-historico>h3 {
         max-width: 1280px;
         text-indent: 30px;
         text-align: justify;
@@ -254,14 +259,14 @@
         color: white;
     }
     
-    .div-img {
+    .div-img-historico {
         max-width: 1280px;
-        margin-top: 50px;
+        margin-top: 20px;
         display: flex;
         flex-flow: row nowrap;
     }
     
-    .div-img>p {
+    .div-img-historico>p {
         display: flex;
         justify-content: flex-end;
     }
@@ -270,7 +275,7 @@
         display: flex;
         width: 640px;
         height: 480px;
-        margin: 10px;
+        margin: 0 10px 5px;
     }
     
     #legendas {
@@ -285,11 +290,11 @@
         width: 415px;
         margin: 10px;
     }
-    
-    
+        
     .swiper-historico {
-        margin-left: auto;
-        margin-right: auto;
-        */
+        width: 100vw;
+        height: 100vh;
+        display: block;
+    }
 
 }
