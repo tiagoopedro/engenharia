@@ -85,7 +85,7 @@ header>img {
     border-left: 1px solid var(--cor0);
 }
 
-header>nav {
+header>#itens {
     margin: 10px auto 0px;
     width: 90vw;
     background-color: rgba(0, 0, 0, 0.027);
@@ -97,7 +97,7 @@ header>nav {
     color: var(--cor0);
 }
 
-header>nav>a {
+header>#itens>a {
     text-decoration: none;
     font-weight: bold;
     align-items: center;
@@ -106,7 +106,7 @@ header>nav>a {
     transition-duration: 0.3s;
 }
 
-nav>a:hover {
+#itens>a:hover {
     background-color: var(--cor0);
     color: var(--cor2);
     border-radius: 10px;

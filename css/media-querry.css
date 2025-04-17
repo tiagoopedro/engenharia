@@ -13,7 +13,7 @@
         border-right: 1px solid var(--cor0);
     }
 
-    header>nav {
+    header>#itens {
         display: block;
         display: flex;
         margin-right: 10vw;
@@ -21,7 +21,7 @@
         width: auto;
     }
 
-    header>nav>a {
+    header>#itens>a {
         text-decoration: none;
         padding: 10px;
         transition-duration: 0.5s;
