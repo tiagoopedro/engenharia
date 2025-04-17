@@ -34,7 +34,7 @@ function numeroSlide() {
   numeroSlide()
 
  // codigo do menu lateral do header
-  var menuButton = document.querySelector('.menu-button');
+ var menuButton = document.querySelector('.menu-button');
     var openMenu = function () {
       swiper.slidePrev();
     };
@@ -65,7 +65,6 @@ function numeroSlide() {
  
 
 //slide inicial historico de serviços 
-
 var swiper = new Swiper(".mySwiper-slide-historico", {
   slidesPerView: 1,
   spaceBetween: 30,
