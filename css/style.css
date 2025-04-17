@@ -116,7 +116,7 @@ header>#itens>a {
     display: none;
 }
 
-/*
+
 
 @keyframes slide {
     from {
@@ -127,7 +127,7 @@ header>#itens>a {
         transform: translateX(-2040px);
     }
 }
-
+/*
 #slider {
     width: 100vw;
     height: 100vh;

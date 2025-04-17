@@ -2,7 +2,7 @@
 function numeroSlide() { 
     if (window.innerWidth >= 768) {
    var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 40,
     navigation: {
       nextEl: ".swiper-button-next",
