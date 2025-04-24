@@ -1,7 +1,4 @@
 
-
-window.addEventListener("load", start)
-
 function mudouTamanho() { 
     if (window.innerWidth >= 768) {
         itens.style.display = 'block'

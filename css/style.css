@@ -224,6 +224,10 @@ header>#itens>a {
 
 /* slide de serviços */
 #h1-servicos-disposicao {
+    border-bottom: 2px solid var(--cor0);
+    padding: 30px 0 0 0;
+    margin-top: 30px;
+    width: 380px;
     font-size: 26px;
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
@@ -242,7 +246,7 @@ header>#itens>a {
 .servicos-disposicao {
     /*conteudo servicos a disposicao*/
     font-size: 18px;
-    background-color: var(--cor4);
+    background-color: #5fa19381;
     height: auto;
     border-radius: 40px;
     padding: 10px 0;
@@ -286,8 +290,9 @@ header>#itens>a {
 
 #clientes h1 {
     border-bottom: 2px solid var(--cor0);
-    padding-bottom: 0;
-    max-width: 460px;
+    padding: 30px 0 0 0;
+    margin-top: 40px;
+    width: 380px;
     font-size: 26px;
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;

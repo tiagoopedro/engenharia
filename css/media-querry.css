@@ -197,17 +197,17 @@
 
     #h1-servicos-disposicao {
         font-size: 30px;
-        margin-top: 50px;
+        margin: 50px 0 0 100px;
         padding-bottom: 0;
         border-bottom: 2px solid var(--cor0);
-        min-width: 460px;
+        min-width: 410px;
     }
 
     .swiper {
         /*section*/
         width: 75vw;
         height: 600px;
-        padding: 30px 50px;
+        padding: 0 0 0px 50px;
         /* background-image: url(../imagens/fundos/07.jpg);
         background-position: center bottom; */
     }
@@ -218,7 +218,6 @@
         font-size: 18px;
         height: 75%;
         padding: 10px 0;
-        background-color: #5fa19381;
     }
 
     .servicos-disposicao>h3 {
@@ -235,7 +234,8 @@
 
     #clientes h1 {
         font-size: 30px;
-        margin-bottom: 20px;
+        margin: 0 0 20px 100px;
+        min-width: 420px;
     }
 
 
