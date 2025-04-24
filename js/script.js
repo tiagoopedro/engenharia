@@ -1,22 +1,4 @@
-let time = 4000;
-let imageIndex = 0;
-let images = document.querySelectorAll("#slider img");
-let max = images.length;
 
-function proximaImagem() {
-
-    images[imageIndex].classList.remove("selected") 
-    imageIndex++
-
-    if(imageIndex >= max)
-        imageIndex = 0
-
-    images[imageIndex].classList.add("selected")
-}
-
-function start() {
-    setInterval(() => { proximaImagem() }, time)
-}
 
 window.addEventListener("load", start)
 
