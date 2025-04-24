@@ -1,3 +1,8 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
 :root {
     --cor0: #023138;
     --cor1: #FEF9A5;
@@ -10,8 +15,6 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    /*inserir envolve sans*/
     color: var(--cor0);
 }
 
@@ -38,6 +41,10 @@ h1,
 h2 {
     text-indent: 30px;
     padding: 30px 0 30px 30px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 a {
@@ -153,6 +160,7 @@ header>#itens>a {
     color: var(--cor2);
     border-bottom: 3px solid var(--cor2);
     min-width: 280px;
+    
 }
 
 .p-quem-somos {
@@ -201,6 +209,10 @@ header>#itens>a {
 /* slide de serviços */
 #h1-servicos-disposicao {
     font-size: 26px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 .swiper {
     /*section*/
@@ -229,6 +241,10 @@ header>#itens>a {
 .servicos-disposicao>h3 {
     padding: 20px 20px;
     text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .servicos-disposicao>li {
@@ -256,6 +272,10 @@ header>#itens>a {
     padding-bottom: 0;
     max-width: 460px;
     font-size: 26px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 #clientes li {
@@ -292,6 +312,13 @@ header>#itens>a {
     background-size: cover;
     background-attachment: fixed;
     background-position: left;
+}
+
+#nosso-time>h1 {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 #nosso-time>h1,
