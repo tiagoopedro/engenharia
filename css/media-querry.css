@@ -217,7 +217,6 @@
         height: 75%;
         padding: 10px 0;
         background-color: #5fa19381;
-        ;
     }
 
     .servicos-disposicao>h3 {
@@ -256,8 +255,9 @@
         margin-top: 50px;
         margin-right: 79vw;
         /*    corrigir*/
-        padding-bottom: 0;
-        border-bottom: 5px double rgb(226, 230, 30);
+        width: 260px;
+        padding: 0;
+        border-bottom: 5px outset rgb(226, 230, 30);
     }
 
     .perfil {
