@@ -132,11 +132,6 @@
 
    /* fim slider historico de serviços  */
 
-  /*  #slider {
-        width: 100vw;
-        height: 90vh;
-    } */
-
     #fundo-quem-somos {
         background: linear-gradient(to right, #738754, #09372D, #09372D, #09372D, #738754);
     }
@@ -301,5 +296,6 @@
 }
 
 @media screen and (min-width: 1921px) {
+
 
 }
