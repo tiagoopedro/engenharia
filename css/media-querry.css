@@ -8,6 +8,9 @@
 }
 
 @media screen and (min-width: 992px) {
+    header {
+        display: block;
+    }
 
     header>img {
         margin-left: 10vw;
