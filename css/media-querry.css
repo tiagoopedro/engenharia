@@ -8,9 +8,6 @@
 }
 
 @media screen and (min-width: 992px) {
-    header {
-        display: block;
-    }
 
     header>img {
         margin-left: 10vw;
@@ -211,8 +208,6 @@
         width: 75vw;
         height: 600px;
         padding: 0 0 0px 50px;
-        /* background-image: url(../imagens/fundos/07.jpg);
-        background-position: center bottom; */
     }
 
     .servicos-disposicao {
