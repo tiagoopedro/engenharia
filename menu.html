@@ -27,151 +27,152 @@
     }
 
     .burguer {
-      display: flex;
-      flex-flow: row;
-      justify-content: space-between;
-      width: 100%;
-      height: 100%;
-    }
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
 
-    .menu {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      min-width: 100px;
-      width: 70%;
-      max-width: 320px;
-      text-align: center;
-      font-size: 18px;      
-      background-color: #09372D;
-      color: #fff;
-    }
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 100px;
+    width: 80%;
+    max-width: 320px;
+    text-align: center;
+    font-size: 18px;      
+    background-color: #09372D;
+    color: #fff;
+  }
 
-    .content {
-      width: 100%;
-    }
+  .content {
+    width: 100%;
+  }
 
-    .menu-button {
-      position: absolute;
-      top: 0px;
-      left: 0px;
+  .menu-button {
+    position: absolute;
+    top: 0px;
+    left: 0px;
 
 
-      padding: 15px;
+    padding: 15px;
 
-      cursor: pointer;
+    cursor: pointer;
 
-      -webkit-transition: 0.3s;
-      transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 
-      background-color: rgba(0, 0, 0, 0.027);
+    background-color: rgba(0, 0, 0, 0.027);
 
-    }
+  }
 
-    .menu-button .bar:nth-of-type(1) {
-      margin-top: 0px;
-    }
+  .menu-button .bar:nth-of-type(1) {
+    margin-top: 0px;
+  }
 
-    .menu-button .bar:nth-of-type(3) {
-      margin-bottom: 0px;
-    }
+  .menu-button .bar:nth-of-type(3) {
+    margin-bottom: 0px;
+  }
 
-    .bar {
-      position: relative;
-      display: block;
+  .bar {
+    position: relative;
+    display: block;
 
-      width: 50px;
-      height: 3px;
+    width: 50px;
+    height: 3px;
 
-      margin: 10px auto;
-      background-color: #09372D;
+    margin: 10px auto;
+    background-color: #09372D;
 
-      border-radius: 10px;
+    border-radius: 10px;
 
-      -webkit-transition: 0.3s;
-      transition: 0.3s;
-    }
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
 
-    .menu-button:hover .bar:nth-of-type(1) {
-      -webkit-transform: translateY(1.5px) rotate(-4.5deg);
-      -ms-transform: translateY(1.5px) rotate(-4.5deg);
-      transform: translateY(1.5px) rotate(-4.5deg);
-    }
+  .menu-button:hover .bar:nth-of-type(1) {
+    -webkit-transform: translateY(1.5px) rotate(-4.5deg);
+    -ms-transform: translateY(1.5px) rotate(-4.5deg);
+    transform: translateY(1.5px) rotate(-4.5deg);
+  }
 
-    .menu-button:hover .bar:nth-of-type(2) {
-      opacity: 0.9;
-    }
+  .menu-button:hover .bar:nth-of-type(2) {
+    opacity: 0.9;
+  }
 
-    .menu-button:hover .bar:nth-of-type(3) {
-      -webkit-transform: translateY(-1.5px) rotate(4.5deg);
-      -ms-transform: translateY(-1.5px) rotate(4.5deg);
-      transform: translateY(-1.5px) rotate(4.5deg);
-    }
+  .menu-button:hover .bar:nth-of-type(3) {
+    -webkit-transform: translateY(-1.5px) rotate(4.5deg);
+    -ms-transform: translateY(-1.5px) rotate(4.5deg);
+    transform: translateY(-1.5px) rotate(4.5deg);
+  }
 
-    .cross .bar:nth-of-type(1) {
-      -webkit-transform: translateY(15px) rotate(-45deg);
-      -ms-transform: translateY(15px) rotate(-45deg);
-      transform: translateY(15px) rotate(-45deg);
-    }
+  .cross .bar:nth-of-type(1) {
+    -webkit-transform: translateY(15px) rotate(-45deg);
+    -ms-transform: translateY(15px) rotate(-45deg);
+    transform: translateY(15px) rotate(-45deg);
+  }
 
-    .cross .bar:nth-of-type(2) {
-      opacity: 0;
-    }
+  .cross .bar:nth-of-type(2) {
+    opacity: 0;
+  }
 
-    .cross .bar:nth-of-type(3) {
-      -webkit-transform: translateY(-15px) rotate(45deg);
-      -ms-transform: translateY(-15px) rotate(45deg);
-      transform: translateY(-15px) rotate(45deg);
-    }
+  .cross .bar:nth-of-type(3) {
+    -webkit-transform: translateY(-15px) rotate(45deg);
+    -ms-transform: translateY(-15px) rotate(45deg);
+    transform: translateY(-15px) rotate(45deg);
+  }
 
-    .cross:hover .bar:nth-of-type(1) {
-      -webkit-transform: translateY(13.5px) rotate(-40.5deg);
-      -ms-transform: translateY(13.5px) rotate(-40.5deg);
-      transform: translateY(13.5px) rotate(-40.5deg);
-    }
+  .cross:hover .bar:nth-of-type(1) {
+    -webkit-transform: translateY(13.5px) rotate(-40.5deg);
+    -ms-transform: translateY(13.5px) rotate(-40.5deg);
+    transform: translateY(13.5px) rotate(-40.5deg);
+  }
 
-    .cross:hover .bar:nth-of-type(2) {
-      opacity: 0.1;
-    }
+  .cross:hover .bar:nth-of-type(2) {
+    opacity: 0.1;
+  }
 
-    .cross:hover .bar:nth-of-type(3) {
-      -webkit-transform: translateY(-13.5px) rotate(40.5deg);
-      -ms-transform: translateY(-13.5px) rotate(40.5deg);
-      transform: translateY(-13.5px) rotate(40.5deg);
-    }
+  .cross:hover .bar:nth-of-type(3) {
+    -webkit-transform: translateY(-13.5px) rotate(40.5deg);
+    -ms-transform: translateY(-13.5px) rotate(40.5deg);
+    transform: translateY(-13.5px) rotate(40.5deg);
+  }
 
-    nav {
-      margin: 10px auto 0px;
-      width: 90vw;
-      background-color: rgba(0, 0, 0, 0.027);
-      border-radius: 20px;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      padding: 0px;
-      color: #023138;
-    }
+  nav {
+    margin: 10px auto 0px;
+    width: 90vw;
+    background-color: rgba(0, 0, 0, 0.027);
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0px;
+    color: #023138;
+  }
 
-    nav>a {
-      text-decoration: none;
-      font-weight: bold;
-      align-items: center;
-      border-radius: 15px;
-      padding: 12px 40px;
-      transition-duration: 0.3s;
-      color: white;
-    }
+  nav>a {
+    text-decoration: none;
+    width: 90%;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 15px;
+    padding: 12px 40px;
+    transition-duration: 0.3s;
+    color: white;
+  }
 
-    nav>a:hover {
-      background-color: #BCA15D;
-      border-radius: 10px;
-    }
+  nav>a:hover {
+    background-color: #BCA15D;
+    border-radius: 10px;
+  }
 
-    #logo-header {
-      margin-left: 100px;
-      width: 280px;
-      height: 55px;
-    }
+  #logo-header {
+    margin-left: 100px;
+    width: 280px;
+    height: 55px;
+  }
   </style>
 </head>
 
