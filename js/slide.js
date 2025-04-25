@@ -11,10 +11,7 @@ var swiper = new Swiper(".mySwiper-slide-historico", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
+  
 });
 
 //serviços a disposicao
