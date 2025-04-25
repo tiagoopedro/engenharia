@@ -241,7 +241,6 @@ header>#itens>a {
     padding: 30px;
     transition: transform 0.5s, border 0.4s;
     overflow: hidden;
-    background-color: #BCA15D;
 }
 
 .servicos-disposicao {
