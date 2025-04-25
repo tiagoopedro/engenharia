@@ -121,6 +121,7 @@
         width: 680px;
         height: 550px;
         margin: 0 10px 5px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.637);
     }
 
     #legendas {
