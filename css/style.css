@@ -108,7 +108,6 @@ header>#itens {
     width: 90vw;
     background-color: rgba(0, 0, 0, 0.027);
     border-radius: 20px;
-display: none;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
