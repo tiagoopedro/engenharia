@@ -31,7 +31,6 @@ body {
     flex-flow: column wrap;
     align-items: flex-start;
     color: var(--cor0);
-   /* overflow-x: hidden; */
 }
 
 p,
@@ -422,7 +421,7 @@ footer>a>img {
 footer>div {
     display: flex;
     flex-flow: column wrap;
-    margin-right: 10px;
+    margin: 0 10px 20px 0;
     padding: 0 0 0 25px;
 }
 
@@ -433,6 +432,7 @@ footer>div {
 
 #p-telefone {
     text-indent: 30px;
+
 }
 
 footer>a>img:hover,

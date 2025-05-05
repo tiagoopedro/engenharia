@@ -302,6 +302,10 @@
         align-items: normal;
     }
 
+    footer>div {
+        margin-bottom: 0;
+    }
+
 
 }
 
