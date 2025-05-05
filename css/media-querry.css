@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 768px) {
-    header>nav>a {
-        display: flex;
-        flex-flow: column wrap;
+@media screen and (min-width: 768px) {
+    i#burguer {
+        display: none;
     }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -32,7 +32,7 @@
         transition-duration: 0.5s;
     }
 
-    #burguer {
+    i#burguer {
         display: none;
     }
 

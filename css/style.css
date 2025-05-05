@@ -31,10 +31,8 @@ body {
     flex-flow: column wrap;
     align-items: flex-start;
     color: var(--cor0);
-    overflow-x: hidden;
-
+   /* overflow-x: hidden; */
 }
-
 
 p,
 li {
@@ -45,7 +43,6 @@ li {
     font-weight: 500;
     font-style: normal;
     line-height: 1.4em;
-
 }
 
 h1,
@@ -62,9 +59,10 @@ a {
     text-decoration: none;
 }
 
-#burguer {
+i#burguer {
     background-color: rgba(0, 0, 0, 0.068);
     color: var(--cor0);
+    display: block;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -74,7 +72,7 @@ a {
     cursor: pointer;
 }
 
-#burguer>img {
+i#burguer>img {
     height: 25px;
     width: 25px;
     padding: 4px;
@@ -104,6 +102,7 @@ header>img {
 }
 
 header>#itens {
+    display: none;
     margin: 10px auto 0px;
     width: 90vw;
     background-color: rgba(0, 0, 0, 0.027);
@@ -116,6 +115,8 @@ header>#itens {
 }
 
 header>#itens>a {
+    display: flex;
+    flex-flow: column wrap;
     text-decoration: none;
     font-weight: bold;
     align-items: center;
