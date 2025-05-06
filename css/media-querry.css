@@ -20,13 +20,14 @@
         display: block;
         display: flex;
         margin-right: 10vw;
-        background-color: white;
         width: auto;
         
     }
 
     header>#itens>a {
+        background-color: white;
         font-size: 18px;
+        width: auto;
         text-decoration: none;
         padding: 10px;
         margin-right: 5px;

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href=css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-querry.css">
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-mobile {
+            width: 100%;
+            height: 100%;
+        }
+
+        .slide-mobile {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        slide-mobile img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #slide-mobile-capa {
+            background-image: url(../imagens/historico\ servico/capa-editada.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left;
+        }
+
+        #slide-mobile-capa>h1 {
+            color: white;
+            margin-top: 50px;
+            width: 500px;
+            font-size: 48px;
+        }
+
+        #slide-mobile-capa>p {
+            text-indent: 30px;
+            text-align: justify;
+            max-width: 700px;
+            font-weight: bold;
+            font-size: 28px;
+            margin-left: 50px;
+            padding: 20px;
+        }
+    </style>
+
+<body>
+
+    <div class="swiper-mobile mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide-mobile" id="slide-mobile-capa">
+                <h1>Obras e Reformas</h1>
+                <div>
+                    <p>Nossa equipe de engenheiros possui experiência na execução e fiscalização
+                        de
+                        obras comerciais, industriais, residenciais e de infraestrutura. A empresa possui
+                        profissionais especializados nos diversos métodos construtivos. Nossas reformas
+                        destacam-se pela produção e qualidade no serviço, em especial na execução de
+                        pintura, piso vinílico, carpetes, forro (drywall, mineral e de gesso com película de
+                        pvc) e paredes de drywall.</p>
+                    <img src="imagens/logo-branco.png" alt="logo-slide" style="width: 400px;">
+                </div>
+            </div>
+
+
+            <div class="swiper-slide slide-mobile">Slide 2</div>
+            <div class="swiper-slide slide-mobile">Slide 3</div>
+            <div class="swiper-slide slide-mobile">Slide 4</div>
+            <div class="swiper-slide slide-mobile">Slide 5</div>
+            <div class="swiper-slide slide-mobile">Slide 6</div>
+            <div class="swiper-slide slide-mobile">Slide 7</div>
+            <div class="swiper-slide slide-mobile">Slide 8</div>
+            <div class="swiper-slide slide-mobile">Slide 9</div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
+</body>
+
+</html>

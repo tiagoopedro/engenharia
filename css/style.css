@@ -118,6 +118,7 @@ header>#itens>a {
     display: flex;
     flex-flow: column wrap;
     width: 90vw;
+    background-color: rgba(0, 0, 0, 0.027);
     text-decoration: none;
     font-weight: bold;
     align-items: center;
