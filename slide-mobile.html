@@ -104,7 +104,7 @@
 
 <body>
 
-    <div class="swiper-mobile mySwiper">
+    <div class="swiper-mobile mySwiper-slide-mobile">
         <div class="swiper-wrapper">
             <div class="swiper-slide slide-mobile" id="slide-mobile-capa">
                 <h1>Obras e Reformas</h1>
@@ -139,6 +139,9 @@
             <div class="swiper-slide slide-mobile">Slide 7</div>
             <div class="swiper-slide slide-mobile">Slide 8</div>
             <div class="swiper-slide slide-mobile">Slide 9</div>
+            <div class="swiper-slide slide-mobile">Slide 9</div>
+            <div class="swiper-slide slide-mobile">Slide 9</div>
+            <div class="swiper-slide slide-mobile">Slide 9</div>
         </div>
         <div class="swiper-pagination"></div>
     </div>
@@ -147,11 +150,23 @@
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-            },
-        });
+      var swiper = new Swiper(".mySwiper-slide-mobile", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  }, /*
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  }, */
+});
     </script>
 
 </body>
