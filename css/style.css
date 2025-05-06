@@ -136,7 +136,7 @@ header>#itens>a {
 }
 
 .swiper-historico {
-    display: none;
+    display: block;
 }
 
 
