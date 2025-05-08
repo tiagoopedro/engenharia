@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) {
+
+    .swiper-mobile {
+        display: none;
+    }
+
     i#burguer {
         display: none;
     }
@@ -8,6 +13,10 @@
 }
 
 @media screen and (min-width: 992px) {
+
+    .swiper-mobile {
+        display: none;
+    }
 
 
     header>img {
@@ -311,5 +320,7 @@
 
 
 }
+
+
 
 @media screen and (min-width: 1921px) {}

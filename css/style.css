@@ -26,11 +26,13 @@ font-style: normal;
     color: var(--cor0);
 }
 
+
 body {
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
     color: var(--cor0);
+    overflow-x: hidden;
 }
 
 p,
@@ -139,17 +141,11 @@ header>#itens>a {
     display: none;
 }
 
-
-
-@keyframes slide {
-    from {
-        transform: translateX(0px);
-    }
-
-    to {
-        transform: translateX(-2040px);
-    }
+.swiper-mobile {
+    display: block;
 }
+
+
 
 #fundo-quem-somos {
     width: 100vw;
@@ -283,6 +279,15 @@ header>#itens>a {
 
 /* slide de serviços fim */
 
+@keyframes slide {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(-2040px);
+    }
+}
 #clientes {
     display: grid;
     place-content: center;
@@ -444,3 +449,93 @@ footer>a>img:hover,
     /*  filter:brightness(0) saturate(100%) invert(52%) sepia(21%) saturate(601%) hue-rotate(42deg) brightness(92%) contrast(94%)*/
 }
 
+
+
+.swiper-mobile {
+    width: 430px;
+    height: 100%;
+}
+
+.slide-mobile {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+   /* background-image: url(../imagens/historico\ servico/fundo-madeira.jpg);*/
+   background-image: url(../imagens/historico\ servico/b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+}
+
+.slide-mobile>h1 {
+    padding: 30px 0;
+    text-indent: 0;
+    color: white;
+    margin: 100px 0 20px;
+}
+
+.slide-mobile>h3 {
+    color: white;
+    text-indent: 30px;
+    max-width: 410px;
+    text-align: justify;
+    margin-bottom: 0;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4em;
+    font-size: 18px;
+}
+
+.slide-mobile>p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+
+slide-mobile img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.img-slide-mobile {
+    width: 410px;
+    height: 460px;
+}
+
+#slide-mobile-capa {
+    background-image: url(../imagens/historico\ servico/capa-editada.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+#slide-mobile-capa>h1 {
+    color: white;
+    padding: 30px;
+    text-indent: 0px;
+    margin: 120px 0 20px;
+    width: 430px;
+    font-size: 40px;
+}
+
+#slide-mobile-capa>div>p {
+    text-indent: 30px;
+    text-align: justify;
+    max-width: 400px;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px;
+}
+
+#slide-mobile-capa>div>img {
+    margin-top: 70px;
+}
