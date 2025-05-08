@@ -145,7 +145,7 @@ header>#itens>a {
 /* slide mobile inicio */
 .swiper-mobile {
     width: 100%;  
-    height: 96vh;   
+    height: 97vh;   
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -168,7 +168,7 @@ header>#itens>a {
     padding: 30px 0;
     text-indent: 0;
     color: white;
-    margin: 70px 0 20px;
+    margin: 20px 0 20px;
 }
 
 .slide-mobile>h3 {
@@ -214,7 +214,7 @@ slide-mobile img {
     color: white;
     padding: 30px;
     text-indent: 0px;
-    margin: 80px 0 20px;
+    margin: 20px 0 20px;
     width: 430px;
     font-size: 40px;
 }
