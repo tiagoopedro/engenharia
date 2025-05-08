@@ -449,12 +449,12 @@ footer>a>img:hover,
     /*  filter:brightness(0) saturate(100%) invert(52%) sepia(21%) saturate(601%) hue-rotate(42deg) brightness(92%) contrast(94%)*/
 }
 
-/*
+
 
 .swiper-mobile {
-    width: 100%;  era 430px
-    height: 100%;
-    background-color: aqua;
+    width: 100%;  
+    height: 880px;
+/* ajustar a altura para 100% */
 }
 
 .slide-mobile {
@@ -465,7 +465,7 @@ footer>a>img:hover,
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;
-   /* background-image: url(../imagens/historico\ servico/fundo-madeira.jpg);
+   /* background-image: url(../imagens/historico\ servico/fundo-madeira.jpg); */
    background-image: url(../imagens/historico\ servico/b.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -498,14 +498,13 @@ footer>a>img:hover,
     font-size: 16px;
 }
 
-
-.slide-mobile img {
+/*
+slide-mobile img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-
-}
+}*/
 
 .img-slide-mobile {
     width: 410px;
@@ -542,4 +541,5 @@ footer>a>img:hover,
     margin-bottom: 100px;
 }
 
-*/
+
+
