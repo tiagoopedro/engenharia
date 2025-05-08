@@ -449,10 +449,10 @@ footer>a>img:hover,
     /*  filter:brightness(0) saturate(100%) invert(52%) sepia(21%) saturate(601%) hue-rotate(42deg) brightness(92%) contrast(94%)*/
 }
 
-
+/*
 
 .swiper-mobile {
-    width: 430px;
+    width: 100%;  era 430px
     height: 100%;
     background-color: aqua;
 }
@@ -465,7 +465,7 @@ footer>a>img:hover,
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;
-   /* background-image: url(../imagens/historico\ servico/fundo-madeira.jpg);*/
+   /* background-image: url(../imagens/historico\ servico/fundo-madeira.jpg);
    background-image: url(../imagens/historico\ servico/b.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -542,3 +542,4 @@ footer>a>img:hover,
     margin-bottom: 100px;
 }
 
+*/
