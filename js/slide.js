@@ -18,7 +18,7 @@ var swiper = new Swiper(".mySwiper-slide-historico", {
 });
 
 //slide mobile
-var swiperm = new Swiper(".mySwiper-slide-mobile", {
+var swiper = new Swiper(".mySwiper-slide-mobile", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,

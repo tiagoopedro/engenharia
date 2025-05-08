@@ -453,8 +453,7 @@ footer>a>img:hover,
 
 .swiper-mobile {
     width: 100%;  
-    height: 880px;
-/* ajustar a altura para 100% */
+    height: 95vh;   
 }
 
 .slide-mobile {
@@ -465,7 +464,6 @@ footer>a>img:hover,
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;
-   /* background-image: url(../imagens/historico\ servico/fundo-madeira.jpg); */
    background-image: url(../imagens/historico\ servico/b.jpg);
     background-repeat: no-repeat;
     background-size: cover;
