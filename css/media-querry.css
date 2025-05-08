@@ -79,7 +79,8 @@
         justify-content: flex-start;
         align-items: center;
         color: white;
-        background-image: url(../imagens/historico\ servico/fundo-madeira.jpg);
+        /*background-image: url(../imagens/historico\ servico/fundo-madeira.jpg); */
+        background-image: url(../imagens/historico\ servico/b.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
