@@ -55,6 +55,10 @@
         display: block;
     }
 
+    .swiper-historico:active {
+    cursor: grabbing;
+}
+
     #slide-capa {
         background-image: url(../imagens/historico\ servico/capa-editada.png);
         background-repeat: no-repeat;
