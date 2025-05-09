@@ -145,7 +145,7 @@ header>#itens>a {
 /* slide mobile inicio */
 .swiper-mobile {
     width: 100%;  
-    height: 97vh;   
+    height: 75vh;   
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -165,18 +165,21 @@ header>#itens>a {
 }
 
 .slide-mobile>h1 {
-    padding: 30px 0;
+    min-width: 350px;
+    padding: 30px 0 10px;
     text-indent: 0;
     color: white;
-    margin: 20px 0 20px;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 28px;
 }
 
 .slide-mobile>h3 {
     color: white;
     text-indent: 30px;
-    max-width: 410px;
+    width: 350px;
     text-align: justify;
-    margin-bottom: 0;
+    margin: 10px;
     color: white;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
@@ -186,8 +189,8 @@ header>#itens>a {
 }
 
 .slide-mobile>p {
-    margin-top: 20px;
-    font-size: 16px;
+    margin-top: 5px;
+    font-size: 14px;
 }
 
 /*
@@ -199,8 +202,8 @@ slide-mobile img {
 }*/
 
 .img-slide-mobile {
-    width: 410px;
-    height: 460px;
+    width: 350px;
+    height: 393px;
 }
 
 #slide-mobile-capa {
@@ -212,25 +215,26 @@ slide-mobile img {
 
 #slide-mobile-capa>h1 {
     color: white;
-    padding: 30px;
+    padding: 30px 0 5px;
     text-indent: 0px;
-    margin: 20px 0 20px;
-    width: 430px;
+    margin: 5px 0px 0px;
+    min-width: 360px;
     font-size: 40px;
+    font-family: "Raleway", sans-serif;
 }
 
 #slide-mobile-capa>div>p {
     text-indent: 30px;
     text-align: justify;
-    max-width: 400px;
-    font-weight: bold;
-    font-size: 22px;
-    padding: 10px;
+    width: 350px;
+    font-weight: 550;
+    font-size: 18px;
+    padding: 5px 10px;
 }
 
 #slide-mobile-capa>div>img {
-    margin-top: 70px;
-    margin-bottom: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 /* slide mobile final */
 
