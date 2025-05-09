@@ -441,6 +441,10 @@ slide-mobile img {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+    padding: 30px 10px 0;
+    margin-bottom: 50px;
+    text-indent: 0;
+    border-bottom: 2px solid white;
 }
 
 #nosso-time>h1,
