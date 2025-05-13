@@ -191,6 +191,7 @@ header>#itens>a {
 .slide-mobile>p {
     margin-top: 5px;
     font-size: 14px;
+    text-indent: 0;
 }
 
 /*
