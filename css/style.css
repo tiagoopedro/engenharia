@@ -161,7 +161,7 @@ header>#itens>a {
    background-image: url(../imagens/fundos/07.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
 }
 
 .slide-mobile>h1 {
