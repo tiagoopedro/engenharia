@@ -158,10 +158,10 @@ header>#itens>a {
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;
-   background-image: url(../imagens/historico\ servico/b.jpg);
+   background-image: url(../imagens/fundos/07.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom left;
+    background-position: bottom;
 }
 
 .slide-mobile>h1 {
