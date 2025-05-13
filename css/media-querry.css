@@ -1,14 +1,24 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) {
-   
+    i#burguer {
+        display: block;
+    }
+
+    i#burguer>img {
+        height: 30px;
+        width: 30px;
+        padding-left: 5px;
+    }
+
     .swiper-mobile {
         display: block;
     }
 
-    i#burguer {
-        display: block;
+    .slide-mobile {
+        background-image: url(../imagens/historico\ servico/b.jpg);
     }
+
 
 }
 
@@ -31,7 +41,7 @@
         display: flex;
         margin-right: 10vw;
         width: auto;
-        
+
     }
 
     header>#itens>a {
@@ -49,15 +59,15 @@
     }
 
     /* slider historico de serviços */
-  .swiper-historico {
+    .swiper-historico {
         width: 100vw;
         height: 1010px;
         display: block;
     }
 
     .swiper-historico:active {
-    cursor: grabbing;
-}
+        cursor: grabbing;
+    }
 
     #slide-capa {
         background-image: url(../imagens/historico\ servico/capa-editada.png);
@@ -154,10 +164,10 @@
         width: 375px;
         margin: 0 10px 5px;
         font-size: 14px;
-        
+
     }
 
-    
+
 
     /* fim slider historico de serviços  */
 
@@ -283,7 +293,7 @@
         margin-right: 80vw;
         /*    corrigir*/
         padding: 0 15px;
-        
+
     }
 
     .perfil {
