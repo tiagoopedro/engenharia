@@ -19,6 +19,58 @@
         background-image: url(../imagens/historico\ servico/b.jpg);
     }
 
+    .img-slide-mobile {
+        width: 500px;
+        height: 561px;
+    }
+
+    #img-reforma-fachada-depois {
+        height: 543px;
+    }
+
+    .projeto-img {
+        width: 410px;
+        height: 500px;
+    }
+
+    .img-autocad {
+        width: 600px;
+        height: 461px;
+        margin-top: 30px;
+    }
+
+    .slide-mobile > h1, h3, p { 
+        color: #09372D;
+    }
+
+      .slide-mobile>p {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .slide-mobile>h3 {
+    width: 600px;
+    font-size: 20px;
+    margin-top: 100px;
+    color: #09372D;
+}
+
+#slide-mobile-capa>h1 {
+    margin: 80px 0px 0px;
+}
+
+#slide-mobile-capa>div>p {
+    color: white;
+    width: 600px;
+    font-weight: 550;
+    font-size: 20px;
+    margin: 50px 0 50px;
+    
+}
+
+#img-logo-capa-mobile {
+   width: 500px;
+}
 
 }
 
@@ -28,7 +80,6 @@
     .swiper-mobile {
         display: none;
     }
-
 
     header>img {
         margin-left: 10vw;
@@ -85,6 +136,7 @@
     }
 
     .p-historico {
+        color: white;
         text-indent: 30px;
         text-align: justify;
         max-width: 700px;
@@ -129,6 +181,10 @@
         font-size: 20px;
     }
 
+     .div-slide-historico>p{
+        color: white;
+     }
+
     .div-img-historico {
         max-width: 1400px;
         margin-top: 20px;
@@ -136,7 +192,8 @@
         flex-flow: row nowrap;
     }
 
-    .div-img-historico>p {
+    .div-img-historico> p {
+        color: white;
         display: flex;
         justify-content: flex-end;
         font-size: 16px;
@@ -149,6 +206,7 @@
         height: 550px;
         margin: 0 10px 5px;
         box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.637);
+        border-radius: 8px;
     }
 
     #legendas {
@@ -160,15 +218,13 @@
     }
 
     #legendas>p {
+        color: white;
         text-indent: 10px;
         width: 375px;
         margin: 0 10px 5px;
         font-size: 14px;
 
     }
-
-
-
     /* fim slider historico de serviços  */
 
     #fundo-quem-somos {
@@ -337,4 +393,3 @@
 
 
 
-@media screen and (min-width: 1921px) {}

@@ -26,14 +26,12 @@ font-style: normal;
     color: var(--cor0);
 }
 
-
 body {
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
     color: var(--cor0);
     overflow-x: hidden;
-
 }
 
 p,
@@ -105,15 +103,6 @@ header>img {
 
 header>#itens {
     display: none;
-    /* margin: 10px auto 0px;
-    width: 90vw;
-    background-color: rgba(0, 0, 0, 0.027);
-    border-radius: 20px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    padding: 10px;
-    color: var(--cor0); */
 }
 
 header>#itens>a {
@@ -197,6 +186,22 @@ header>#itens>a {
 .img-slide-mobile {
     width: 350px;
     height: 393px;
+    border-radius: 8px;
+}
+
+#img-reforma-fachada-depois {
+    height: 380px; 
+    margin-bottom: 10px;
+}
+
+.projeto-img {
+    width: 350px;
+    height: 426px;
+}
+
+.img-autocad {
+    width: 350px;
+    height: 269px;
 }
 
 #slide-mobile-capa {
@@ -225,7 +230,8 @@ header>#itens>a {
     padding: 5px 10px;
 }
 
-#slide-mobile-capa>div>img {
+#img-logo-capa-mobile {
+    width: 350px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -482,6 +488,7 @@ p {
 #d2,
 #d3 {
     display: none;
+    color: white;
 }
 
 footer {

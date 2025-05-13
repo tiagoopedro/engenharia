@@ -52,6 +52,20 @@ function numeroSlide() {
       },
     })
   }
+  else if (window.innerWidth >= 992) {
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 40,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    })
+  }
   else if (window.innerWidth >= 768) {
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 2,
