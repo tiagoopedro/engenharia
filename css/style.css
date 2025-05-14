@@ -547,3 +547,37 @@ footer>a>img:hover,
     filter: invert(54%) sepia(15%) saturate(1787%) hue-rotate(357deg) brightness(104%) contrast(88%);
     /*  filter:brightness(0) saturate(100%) invert(52%) sepia(21%) saturate(601%) hue-rotate(42deg) brightness(92%) contrast(94%)*/
 }
+
+/* css das animaçoes */
+
+[data-anime] {
+    opacity: 0;
+    transition: 3.5s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(-1200px, -150px, 0px);
+}
+
+[data-anime="right"] {
+    transform: translate3d(1000px, 150px, 0px);
+}
+
+[data-anime="up"] {
+    transform: translate3d(1000px, -600px, 0px);
+}
+
+[data-anime="down"] {
+    transform: translate3d(-1000px, 200px, 0px);
+}
+
+[data-anime="nosso-time"] {
+    transform: translate3d(-500px, 0px, 0);
+    transition: 5s;
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
