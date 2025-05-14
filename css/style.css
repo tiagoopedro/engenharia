@@ -552,28 +552,28 @@ footer>a>img:hover,
 
 [data-anime] {
     opacity: 0;
-    transition: 3.5s;
+    transition: 3s;
 }
 
 [data-anime="left"] {
-    transform: translate3d(-1200px, -150px, 0px);
+    transform: translate3d(-50px, -50px, 0px);
 }
 
 [data-anime="right"] {
-    transform: translate3d(1000px, 150px, 0px);
+    transform: translate3d(50px, 50px, 0px);
 }
 
 [data-anime="up"] {
-    transform: translate3d(1000px, -600px, 0px);
+    transform: translate3d(50px, -50px, 0px);
 }
 
 [data-anime="down"] {
-    transform: translate3d(-1000px, 200px, 0px);
+    transform: translate3d(-50px, 50px, 0px);
 }
 
 [data-anime="nosso-time"] {
-    transform: translate3d(-500px, 0px, 0);
-    transition: 5s;
+    transform: translate3d(-50px, 0px, 0);
+    transition: 2s;
 }
 
 [data-anime].animate {

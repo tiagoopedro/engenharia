@@ -22,17 +22,18 @@ function clickMenu(perfil) {
  const animationClass = 'animate';
 
  function animeScroll() {
-    const windowTop = window.pageYOffset + 1100;
-    console.log(windowTop);
+    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+   
     target.forEach(function(element) {
         if(windowTop > element.offsetTop) {
             element.classList.add(animationClass) //'animate' ou a const como foi inserido
+        } else {
+           element.classList.remove(animationClass) 
         }
-
-        console.log(element.offsetTop);
     })
  }
 
+ if(target.length) { 
  window.addEventListener('scroll', function() {
     animeScroll();
- })
+ })}
