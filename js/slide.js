@@ -131,7 +131,11 @@ var swiper = new Swiper('.burguer', {
   },
 });
 
-
+var swiper = new Swiper(".mySwiper-mobile", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
 
 
 

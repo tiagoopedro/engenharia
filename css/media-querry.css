@@ -284,6 +284,7 @@
 
     #div2>p {
         padding: 35px 50px 0 0;
+        margin-top: 0;
     }
 
     /* slide de serviços */
@@ -347,14 +348,13 @@
     #nosso-time>h1 {
         margin-top: 50px;
         margin-right: 80vw;
-        /*    corrigir*/
         padding: 0 15px;
 
     }
 
     .perfil {
         padding: 20px;
-        margin: 300px 20px 0px;
+        margin: 100px 20px 0px;
         max-width: 550px;
         width: auto;
         color: rgba(235, 29, 29, 0);
@@ -388,6 +388,9 @@
         margin-bottom: 0;
     }
 
+    [data-anime="nosso-time"] {
+    transition: .8s;
+}
 
 }
 
