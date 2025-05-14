@@ -552,7 +552,7 @@ footer>a>img:hover,
 
 [data-anime] {
     opacity: 0;
-    transition: .5s;
+    transition: .6s;
     transform: translate3d(-50px, 0px, 0);
 }
 
