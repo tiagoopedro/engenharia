@@ -131,7 +131,7 @@ var swiper = new Swiper('.burguer', {
   },
 });
 
-var swiper = new Swiper(".mySwiper-mobile", {
+ var slideMobile = new Swiper(".mySwiper-slide-mobile", {
       pagination: {
         el: ".swiper-pagination",
       },
