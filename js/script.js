@@ -45,9 +45,9 @@ function clickMenu(perfil) {
     target.forEach(function(element) {
         if(windowTop > element.offsetTop) {
             element.classList.add(animationClass) //'animate' ou a const como foi inserido
-        } else {
+        } /*else {
            element.classList.remove(animationClass) 
-        }
+        }*/
     })
  }
 

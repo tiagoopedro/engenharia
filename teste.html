@@ -48,9 +48,9 @@
 
         .menu-button {
             position: absolute;
-            top: 0px;
-            left: 0px;
-            padding: 15px;
+            top: 10px;
+            left: 10px;
+            padding: 6px;
             cursor: pointer;
             -webkit-transition: 0.3s;
             transition: 0.3s;
@@ -69,9 +69,9 @@
         .bar {
             position: relative;
             display: block;
-            width: 50px;
+            width: 32px;
             height: 3px;
-            margin: 10px auto;
+            margin: 8px auto;
             background-color: #09372D;
             border-radius: 10px;
             -webkit-transition: 0.3s;
@@ -158,9 +158,15 @@
 
 
         #logo-header {
-            margin-left: 27vw;
-            width: 280px;
-            height: 55px;
+            width: 240px;
+            height: 45px;
+            padding: 5px 0;
+        }
+
+        #div-logo-header {
+            display: flex;
+            flex-flow: row;
+            justify-content: flex-end;
         }
 
         /* .swiper-mobile {
@@ -216,7 +222,7 @@
                         <div class="bar"></div>
                     </div>
                     <!--conteudo a partir daqui-->
-                    <img src="imagens/logo1.png" alt="logo" id="logo-header">
+                    <div id="div-logo-header"><img src="imagens/logo1.png" alt="logo" id="logo-header"></div>
 
                     <div class="swiper-mobile mySwiper-slide-mobile">
                         <div class="swiper-wrapper">
@@ -744,8 +750,8 @@
                 eficaz na entrega de resultados de alta qualidade. </p>
         </div>
 
-        <footer>
-            <img id="logo-footer" src="imagens/logo-branco.png" alt="logo">
+        <footer data-anime="nosso-time">
+            <img id="logo-footer" src="imagens/logo-branco.png" alt="logo" data-anime="nosso-time">
 
             <a href="mailto:queiroznepomuceno@gmail.com">
                 <img src="icones/e-mail.png" alt="email">
@@ -780,7 +786,7 @@
 
 
 
-            <!-- <p>© Copyright 2025</p> -->
+           <!--  <p>© Copyright 2025 | Queiroz e Nepomuceno | Todos os direitos reservados </p> -->
 
         </footer>
     </div>
