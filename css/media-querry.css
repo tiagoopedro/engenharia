@@ -39,38 +39,40 @@
         margin-top: 30px;
     }
 
-    .slide-mobile > h1, h3, p { 
+    .slide-mobile>h1,
+    h3,
+    p {
         color: #09372D;
     }
 
-      .slide-mobile>p {
+    .slide-mobile>p {
         font-size: 16px;
         font-weight: 600;
     }
 
     .slide-mobile>h3 {
-    width: 600px;
-    font-size: 20px;
-    margin-top: 100px;
-    color: #09372D;
-}
+        width: 600px;
+        font-size: 20px;
+        margin-top: 100px;
+        color: #09372D;
+    }
 
-#slide-mobile-capa>h1 {
-    margin: 80px 0px 0px;
-}
+    #slide-mobile-capa>h1 {
+        margin: 80px 0px 0px;
+    }
 
-#slide-mobile-capa>div>p {
-    color: white;
-    width: 600px;
-    font-weight: 550;
-    font-size: 20px;
-    margin: 50px 0 50px;
-    
-}
+    #slide-mobile-capa>div>p {
+        color: white;
+        width: 600px;
+        font-weight: 550;
+        font-size: 20px;
+        margin: 50px 0 50px;
 
-#img-logo-capa-mobile {
-   width: 500px;
-}
+    }
+
+    #img-logo-capa-mobile {
+        width: 500px;
+    }
 
 }
 
@@ -80,11 +82,29 @@
     .swiper-mobile {
         display: none;
     }
+/*teste header  */
+    header {
+        padding: 10px;
+    }
 
     header>img {
+        display: block;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        height: 45px;
+        width: 240px;
+
+        margin-right: 10px;
+
+
         margin-left: 10vw;
         border: none;
         border-right: 1px solid var(--cor0);
+    }
+
+    #logo-header, .esconder-menu {
+        display: none;
     }
 
     header>#itens {
@@ -92,6 +112,7 @@
         display: flex;
         margin-right: 10vw;
         width: auto;
+        background-color: white; /*add*/
 
     }
 
@@ -181,9 +202,9 @@
         font-size: 20px;
     }
 
-     .div-slide-historico>p{
+    .div-slide-historico>p {
         color: white;
-     }
+    }
 
     .div-img-historico {
         max-width: 1400px;
@@ -192,7 +213,7 @@
         flex-flow: row nowrap;
     }
 
-    .div-img-historico> p {
+    .div-img-historico>p {
         color: white;
         display: flex;
         justify-content: flex-end;
@@ -225,6 +246,7 @@
         font-size: 14px;
 
     }
+
     /* fim slider historico de serviços  */
 
     #fundo-quem-somos {
@@ -389,10 +411,7 @@
     }
 
     [data-anime="nosso-time"] {
-    transition: .8s;
-}
+        transition: .8s;
+    }
 
 }
-
-
-

@@ -91,14 +91,15 @@ header {
 }
 
 header>img {
-    display: flex;
+    display: none;
+    /*  display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
     height: 45px;
     width: 240px;
     padding-left: 2px;
     margin-right: 10px;
-    border-left: 1px solid var(--cor0);
+    border-left: 1px solid var(--cor0); */
 }
 
 header>#itens {
@@ -106,6 +107,8 @@ header>#itens {
 }
 
 header>#itens>a {
+    /* add a cor*/
+    color: #023138;
     display: block;
     display: flex;
     flex-flow: column wrap;
@@ -190,7 +193,7 @@ header>#itens>a {
 }
 
 #img-reforma-fachada-depois {
-    height: 380px; 
+    height: 380px;
     margin-bottom: 10px;
 }
 
@@ -576,4 +579,3 @@ footer>a>img:hover,
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
 }
-
