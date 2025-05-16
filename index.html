@@ -10,204 +10,412 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media-querry.css">
     <title>Queiroz Nepomuceno</title>
+    <style>
+        header {
+            padding: 0;
+        }
 
+        .swiper-mobile {
+            width: 100vw;
+        }
+
+        .burguer {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .menu {
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-width: 100px;
+            width: 80%;
+            max-width: 320px;
+            text-align: center;
+            font-size: 18px;
+            background-color: #09372D;
+            color: #fff;
+        }
+
+        .content {
+            width: 100%;
+        }
+
+        .menu-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 6px;
+            cursor: pointer;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            background-color: rgba(0, 0, 0, 0.027);
+
+        }
+
+        .menu-button .bar:nth-of-type(1) {
+            margin-top: 0px;
+        }
+
+        .menu-button .bar:nth-of-type(3) {
+            margin-bottom: 0px;
+        }
+
+        .bar {
+            position: relative;
+            display: block;
+            width: 32px;
+            height: 3px;
+            margin: 8px auto;
+            background-color: #09372D;
+            border-radius: 10px;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+        }
+
+        .menu-button:hover .bar:nth-of-type(1) {
+            -webkit-transform: translateY(1.5px) rotate(-4.5deg);
+            -ms-transform: translateY(1.5px) rotate(-4.5deg);
+            transform: translateY(1.5px) rotate(-4.5deg);
+        }
+
+        .menu-button:hover .bar:nth-of-type(2) {
+            opacity: 0.9;
+        }
+
+        .menu-button:hover .bar:nth-of-type(3) {
+            -webkit-transform: translateY(-1.5px) rotate(4.5deg);
+            -ms-transform: translateY(-1.5px) rotate(4.5deg);
+            transform: translateY(-1.5px) rotate(4.5deg);
+        }
+
+        .cross .bar:nth-of-type(1) {
+            -webkit-transform: translateY(15px) rotate(-45deg);
+            -ms-transform: translateY(15px) rotate(-45deg);
+            transform: translateY(15px) rotate(-45deg);
+        }
+
+        .cross .bar:nth-of-type(2) {
+            opacity: 0;
+        }
+
+        .cross .bar:nth-of-type(3) {
+            -webkit-transform: translateY(-15px) rotate(45deg);
+            -ms-transform: translateY(-15px) rotate(45deg);
+            transform: translateY(-15px) rotate(45deg);
+        }
+
+        .cross:hover .bar:nth-of-type(1) {
+            -webkit-transform: translateY(13.5px) rotate(-40.5deg);
+            -ms-transform: translateY(13.5px) rotate(-40.5deg);
+            transform: translateY(13.5px) rotate(-40.5deg);
+        }
+
+        .cross:hover .bar:nth-of-type(2) {
+            opacity: 0.1;
+        }
+
+        .cross:hover .bar:nth-of-type(3) {
+            -webkit-transform: translateY(-13.5px) rotate(40.5deg);
+            -ms-transform: translateY(-13.5px) rotate(40.5deg);
+            transform: translateY(-13.5px) rotate(40.5deg);
+        }
+
+        nav {
+            margin: 10px auto 0px;
+            width: 90vw;
+            background-color: rgba(0, 0, 0, 0.027);
+            border-radius: 20px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            padding: 0px;
+            color: #023138;
+        }
+
+        nav>a {
+            text-decoration: none;
+            width: 90%;
+            font-weight: bold;
+            align-items: center;
+            border-radius: 15px;
+            padding: 12px 40px;
+            transition-duration: 0.3s;
+            color: white;
+            transition-duration: 0.3s;
+            font-family: "Raleway", sans-serif;
+        }
+
+        nav>a:hover {
+            background-color: #BCA15D;
+            border-radius: 10px;
+        }
+
+
+        #logo-header {
+            width: 240px;
+            height: 45px;
+            padding: 5px 0;
+        }
+
+        #div-logo-header {
+            display: flex;
+            flex-flow: row;
+            justify-content: flex-end;
+        }
+
+        /* .swiper-mobile {
+      width: 100%;
+      height: 100%;
+    }
+
+    .slide-mobile {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slide-mobile img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  */
+    </style>
 </head>
 
 <body onresize="mudouTamanho()">
 
     <header>
-        <i id="burguer" class="Icons8" onclick="clickMenu(itens)"><img src="imagens/icone-hamburguer.png"></i>
-         <img src="imagens/logo1.png" alt="logo">
+
+        <img src="imagens/logo1.png" alt="logo">
         <nav id="itens">
-            <a href="teste.html">Teste aqui</a>
             <a href="#quem-somos">Quem Somos</a>
             <a href="#h1-servicos-disposicao">Serviços a Disposição</a>
             <a href="#nosso-time">Nosso time</a>
             <a href="#logo-footer">Contato</a>
         </nav>
-    </header>
-  
- 
-   <div class="swiper-mobile mySwiper-slide-mobile">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide slide-mobile" id="slide-mobile-capa">
-                <h1>Obras e Reformas</h1>
-                <div>
-                    <p>Nossa equipe de engenheiros possui experiência na execução e fiscalização
-                        de
-                        obras comerciais, industriais, residenciais e de infraestrutura. A empresa possui
-                        profissionais especializados nos diversos métodos construtivos. Nossas reformas
-                        destacam-se pela produção e qualidade no serviço, em especial na execução de
-                        pintura, piso vinílico, carpetes, forro (drywall, mineral e de gesso com película de
-                        pvc) e paredes de drywall.</p>
-                    <img id="img-logo-capa-mobile" src="imagens/logo-branco.png" alt="logo-slide" >
+
+        <div class="burguer">
+            <div class="swiper-wrapper esconder-menu">
+                <div class="swiper-slide menu">
+                    <nav>
+                        <a href="#quem-somos">Quem Somos</a>
+                        <a href="#h1-servicos-disposicao">Serviços a Disposição</a>
+                        <a href="#nosso-time">Nosso time</a>
+                        <a href="#logo-footer">Contato</a>
+                    </nav>
+                </div>
+                <div class="swiper-slide content">
+                    <div class="menu-button">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <!--conteudo a partir daqui-->
+                    <div id="div-logo-header"><img src="imagens/logo1.png" alt="logo" id="logo-header"></div>
+
+                    <div class="swiper-mobile mySwiper-slide-mobile">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-mobile" id="slide-mobile-capa">
+                                <h1>Obras e Reformas</h1>
+                                <div>
+                                    <p>Nossa equipe de engenheiros possui experiência na execução e fiscalização
+                                        de
+                                        obras comerciais, industriais, residenciais e de infraestrutura. A empresa
+                                        possui
+                                        profissionais especializados nos diversos métodos construtivos. Nossas reformas
+                                        destacam-se pela produção e qualidade no serviço, em especial na execução de
+                                        pintura, piso vinílico, carpetes, forro (drywall, mineral e de gesso com
+                                        película de
+                                        pvc) e paredes de drywall.</p>
+                                    <img id="img-logo-capa-mobile" src="imagens/logo-branco.png" alt="logo-slide">
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Histórico de Atuação</h1>
+                                <img class="img-slide-mobile" src="imagens/historico servico/0.png" alt="img1">
+                                <p>Reforma de fachada (Antes) - Caruaru - PE</p>
+                            </div>
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Histórico de Atuação</h1>
+                                <img class="img-slide-mobile" id="img-reforma-fachada-depois"
+                                    src="imagens/historico servico/1.png" alt="img2">
+                                <p>Reforma de fachada (Depois) - Caruaru - PE</p>
+                            </div>
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Histórico de Atuação</h1>
+                                <img class="img-slide-mobile" src="imagens/historico servico/2.png" alt="img3">
+                                <p>Execução de Pintura (Igarassu - PE)</p>
+                            </div>
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Histórico de Atuação</h1>
+                                <img class="img-slide-mobile" src="imagens/historico servico/3.png" alt="img4">
+                                <p>Execução de Pintura (Igarassu - PE)</p>
+                            </div>
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Histórico de Atuação</h1>
+                                <img class="img-slide-mobile" src="imagens/historico servico/4.png" alt="img3">
+                                <p>Execução de estrutura com placas de
+                                    drywall - UNILEVER Igarassu - PE</p>
+                            </div>
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Histórico de Atuação</h1>
+                                <img class="img-slide-mobile" src="imagens/historico servico/5.png" alt="img4">
+                                <p>Execução de estrutura com placas de
+                                    drywall - UNILEVER Igarassu - PE</p>
+                            </div>
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Histórico de Atuação</h1>
+                                <img class="img-slide-mobile" src="imagens/historico servico/6.png" alt="img3">
+                                <p>Execução de forro de gesso com película de
+                                    PVC - UNILEVER Igarassu - PE</p>
+                            </div>
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Histórico de Atuação</h1>
+                                <img class="img-slide-mobile" src="imagens/historico servico/7.png" alt="img4">
+                                <p>Execução de forro de gesso com película de
+                                    PVC - UNILEVER Igarassu - PE</p>
+                            </div>
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Histórico de Atuação</h1>
+                                <img class="img-slide-mobile" src="imagens/historico servico/8.png" alt="img3">
+                                <p>Instalação de piso vinílico em
+                                    régua no quarto e closet</p>
+                            </div>
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Histórico de Atuação</h1>
+                                <img class="img-slide-mobile" src="imagens/historico servico/9.png" alt="img4">
+                                <p>Instalação de piso vinílico em
+                                    régua no quarto e closet</p>
+                            </div>
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Histórico de Atuação</h1>
+                                <img class="img-slide-mobile" src="imagens/historico servico/10.png" alt="img3">
+                                <p>Execução de Painel Ripado
+                                    no quarto do casal</p>
+                            </div>
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Histórico de Atuação</h1>
+                                <img class="img-slide-mobile" src="imagens/historico servico/11.png" alt="img4">
+                                <p>Execução de Painel Ripado
+                                    no quarto do casal</p>
+                            </div>
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Histórico de Atuação</h1>
+                                <img class="img-slide-mobile" src="imagens/historico servico/12.png" alt="img3">
+                                <p>Reforma de suíte - Igarassu- PE</p>
+                            </div>
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Histórico de Atuação</h1>
+                                <img class="img-slide-mobile" src="imagens/historico servico/14.png" alt="img4">
+                                <p>Reforma de suíte - Igarassu- PE</p>
+                            </div>
+
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Projetos</h1>
+                                <h3>O setor de projetos da empresa atua com principalmente com a elaboração
+                                    de projetos complementares
+                                    prediais, especialmente estrutural e elétrico. Nossos
+                                    projetistas são especialistas em estruturas, concebendo, projetando, dimensionado,
+                                    otimizando e detalhando estruturas de todos os tipos. Diversos tipos de estruturas
+                                    foram alvo de nossos projetos, destacando-se reforços estruturais, telhados para
+                                    instalação de sistemas fotovoltaicos e pontes rolantes. Além disso no projetos de
+                                    estruturas também engloba estruturas em concreto armado e em madeira.</h3>
+                            </div>
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Projetos</h1>
+                                <img src="imagens/historico servico/15.png" alt="img3" class="projeto-img">
+                                <p>Projeto de estrutura metálica -
+                                    Telhado Clínica Ninho (Recife/PE) </p>
+                            </div>
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Projetos</h1>
+                                <img src="imagens/historico servico/16.png" alt="img3" class="projeto-img">
+                                <p>Projeto de edifício comercial e
+                                    residencial (Vertentes/PE) </p>
+                            </div>
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Projetos</h1>
+                                <img src="imagens/historico servico/17.png" alt="img4" class="projeto-img">
+                                <p>Projeto de reforço de telhado de
+                                    madeira (Prefeitura Sta. Maria do
+                                    Cambucá/PE)</p>
+                            </div>
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Projetos Complementares de Instalações Prediais</h1>
+                                <h3>O projeto de instalações elétricas de baixa tensão é o mais solicitado para nossa
+                                    empresa, tendo sido realizados projetos desde circuitos individuais para
+                                    atendimento à equipamentos específicos, até projetos de grandes dimensões,
+                                    como o Hospital que atenderá Abreu e Lima, com aproximadamente 1200m² de
+                                    área construída. Da mesma complexidade já foram projetados sistemas de água
+                                    fria, esgotamento sanitário, drenagem predial.</h3>
+                            </div>
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Projetos de Instalações Prediais</h1>
+                                <img class="img-autocad" src="imagens/historico servico/18.png" alt="img3">
+                                <p>Hospital Municipal em Abreu e Lima (PE) -
+                                    Coordenado pela Urbana Arquitetura</p>
+                            </div>
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Projeto de Infraestrutura de Saneamento Urbano</h1>
+                                <h3>O projeto de infraestrutura de saneamento urbano engloba sistemas de
+                                    distribuição de água, rede coletora de esgoto e sistema de drenagem urbana.
+                                    Nossos projetos procuram atender a necessidade humana e social em conjunto
+                                    com a preservação ambiental, adotando medidas que minimizem os impactos
+                                    negativos da implantação destes sistemas.</h3>
+                            </div>
+
+                            <div class="swiper-slide slide-mobile">
+                                <h1>Projeto de Infraestrutura de Saneamento Urbano</h1>
+                                <img class="img-autocad" src="imagens/historico servico/19.png" alt="img3">
+                                <p>Projeto de drenagem urbana para o
+                                    loteamento Três Lagoas (Garanhuns/PE)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
                 </div>
             </div>
-
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Histórico de Atuação</h1>
-                <img class="img-slide-mobile" src="imagens/historico servico/0.png" alt="img1">
-                <p>Reforma de fachada (Antes) - Caruaru - PE</p>
-            </div>
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Histórico de Atuação</h1>
-                <img class="img-slide-mobile" id="img-reforma-fachada-depois" src="imagens/historico servico/1.png" alt="img2">
-                <p>Reforma de fachada (Depois) - Caruaru - PE</p>
-            </div>
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Histórico de Atuação</h1>
-                <img class="img-slide-mobile" src="imagens/historico servico/2.png" alt="img3">
-                <p>Execução de Pintura (Igarassu - PE)</p>
-            </div>
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Histórico de Atuação</h1>
-                <img class="img-slide-mobile" src="imagens/historico servico/3.png" alt="img4">
-                <p>Execução de Pintura (Igarassu - PE)</p>
-            </div>
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Histórico de Atuação</h1>
-                <img class="img-slide-mobile" src="imagens/historico servico/4.png" alt="img3">
-                <p>Execução de estrutura com placas de
-                    drywall - UNILEVER Igarassu - PE</p>
-            </div>
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Histórico de Atuação</h1>
-                <img class="img-slide-mobile" src="imagens/historico servico/5.png" alt="img4">
-                <p>Execução de estrutura com placas de
-                    drywall - UNILEVER Igarassu - PE</p>
-            </div>
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Histórico de Atuação</h1>
-                <img class="img-slide-mobile" src="imagens/historico servico/6.png" alt="img3">
-                <p>Execução de forro de gesso com película de
-                    PVC - UNILEVER Igarassu - PE</p>
-            </div>
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Histórico de Atuação</h1>
-                <img class="img-slide-mobile" src="imagens/historico servico/7.png" alt="img4">
-                <p>Execução de forro de gesso com película de
-                    PVC - UNILEVER Igarassu - PE</p>
-            </div>
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Histórico de Atuação</h1>
-                <img class="img-slide-mobile" src="imagens/historico servico/8.png" alt="img3">
-                <p>Instalação de piso vinílico em
-                    régua no quarto e closet</p>
-            </div>
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Histórico de Atuação</h1>
-                <img class="img-slide-mobile" src="imagens/historico servico/9.png" alt="img4">
-                <p>Instalação de piso vinílico em
-                    régua no quarto e closet</p>
-            </div>
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Histórico de Atuação</h1>
-                <img class="img-slide-mobile" src="imagens/historico servico/10.png" alt="img3">
-                <p>Execução de Painel Ripado
-                    no quarto do casal</p>
-            </div>
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Histórico de Atuação</h1>
-                <img class="img-slide-mobile" src="imagens/historico servico/11.png" alt="img4">
-                <p>Execução de Painel Ripado
-                    no quarto do casal</p>
-            </div>
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Histórico de Atuação</h1>
-                <img class="img-slide-mobile" src="imagens/historico servico/12.png" alt="img3">
-                <p>Reforma de suíte - Igarassu- PE</p>
-            </div>
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Histórico de Atuação</h1>
-                <img class="img-slide-mobile" src="imagens/historico servico/14.png" alt="img4">
-                <p>Reforma de suíte - Igarassu- PE</p>
-            </div>
-
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Projetos</h1>
-                <h3>O setor de projetos da empresa atua com principalmente com a elaboração
-                    de projetos complementares
-                    prediais, especialmente estrutural e elétrico. Nossos
-                    projetistas são especialistas em estruturas, concebendo, projetando, dimensionado,
-                    otimizando e detalhando estruturas de todos os tipos. Diversos tipos de estruturas
-                    foram alvo de nossos projetos, destacando-se reforços estruturais, telhados para
-                    instalação de sistemas fotovoltaicos e pontes rolantes. Além disso no projetos de
-                    estruturas também engloba estruturas em concreto armado e em madeira.</h3>
-            </div>
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Projetos</h1>
-                <img src="imagens/historico servico/15.png" alt="img3" class="projeto-img">
-                <p>Projeto de estrutura metálica -
-                    Telhado Clínica Ninho (Recife/PE) </p>
-            </div>
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Projetos</h1>
-                <img src="imagens/historico servico/16.png" alt="img3" class="projeto-img">
-                <p>Projeto de edifício comercial e
-                    residencial (Vertentes/PE) </p>
-            </div>
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Projetos</h1>
-                <img src="imagens/historico servico/17.png" alt="img4" class="projeto-img">
-                <p>Projeto de reforço de telhado de
-                    madeira (Prefeitura Sta. Maria do
-                    Cambucá/PE)</p>
-            </div>
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Projetos Complementares de Instalações Prediais</h1>
-                <h3>O projeto de instalações elétricas de baixa tensão é o mais solicitado para nossa
-                    empresa, tendo sido realizados projetos desde circuitos individuais para
-                    atendimento à equipamentos específicos, até projetos de grandes dimensões,
-                    como o Hospital que atenderá Abreu e Lima, com aproximadamente 1200m² de
-                    área construída. Da mesma complexidade já foram projetados sistemas de água
-                    fria, esgotamento sanitário, drenagem predial.</h3>
-            </div>
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Projetos de Instalações Prediais</h1>
-                <img class="img-autocad" src="imagens/historico servico/18.png" alt="img3">
-                <p>Hospital Municipal em Abreu e Lima (PE) -
-                    Coordenado pela Urbana Arquitetura</p>
-            </div>
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Projeto de Infraestrutura de Saneamento Urbano</h1>
-                <h3>O projeto de infraestrutura de saneamento urbano engloba sistemas de
-                    distribuição de água, rede coletora de esgoto e sistema de drenagem urbana.
-                    Nossos projetos procuram atender a necessidade humana e social em conjunto
-                    com a preservação ambiental, adotando medidas que minimizem os impactos
-                    negativos da implantação destes sistemas.</h3>
-            </div>
-
-            <div class="swiper-slide slide-mobile">
-                <h1>Projeto de Infraestrutura de Saneamento Urbano</h1>
-                <img class="img-autocad" src="imagens/historico servico/19.png" alt="img3">
-                <p>Projeto de drenagem urbana para o
-                    loteamento Três Lagoas (Garanhuns/PE)</p>
-            </div>
-           
         </div>
-       
-    </div>
+    </header>
+
+
+
 
     <div class="swiper-historico mySwiper-slide-historico">
         <div class="swiper-wrapper">
@@ -297,8 +505,9 @@
             </div>
 
             <div class="swiper-slide div-slide-historico">
-                
-                <h3 style="margin: 30px 0 10px">O setor de projetos da empresa atua com principalmente com a elaboração de projetos complementares
+
+                <h3 style="margin: 30px 0 10px">O setor de projetos da empresa atua com principalmente com a elaboração
+                    de projetos complementares
                     prediais, especialmente estrutural e elétrico. Nossos
                     projetistas são especialistas em estruturas, concebendo, projetando, dimensionado,
                     otimizando e detalhando estruturas de todos os tipos. Diversos tipos de estruturas
@@ -355,15 +564,16 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
-    </div> 
+    </div>
 
     <section id="fundo-quem-somos">
         <div id="quem-somos">
             <h1>QUEM SOMOS</h1>
             <div id="div1">
                 <img src="imagens/02.jpg" alt="img1" data-anime="left">
-                <img id="logo-quem-somos" src="imagens/logo-recorte-transparente.png" alt="logo"  data-anime="left">
-                <p class="p-quem-somos" data-anime="up"> Fundada em 2022, mas reunindo profissionais com experiência sólida em projetos
+                <img id="logo-quem-somos" src="imagens/logo-recorte-transparente.png" alt="logo" data-anime="left">
+                <p class="p-quem-somos" data-anime="up"> Fundada em 2022, mas reunindo profissionais com experiência
+                    sólida em projetos
                     e serviços de engenharia, a Queiroz Nepomuceno Projeto e Construção tem
                     atuado em atividades que vão desde o pensar na solução até a realização da visão do nosso cliente
                     com o compromisso de fornecer soluções inovadoras e
@@ -385,7 +595,7 @@
                     diferença. Se você procura uma empresa de engenharia que alia experiência,
                     dedicação e qualidade, a Queiroz Nepomuceno é a escolha certa.</p>
                 <img src="imagens/p0.jpg" alt="img2" data-anime="right">
-            </div>                                
+            </div>
         </div>
     </section>
 
@@ -540,48 +750,50 @@
                 eficaz na entrega de resultados de alta qualidade. </p>
         </div>
 
-        <footer>
-            <img id="logo-footer" src="imagens/logo-branco.png" alt="logo">
+        <footer data-anime="nosso-time">
+            <img id="logo-footer" src="imagens/logo-branco.png" alt="logo" data-anime="nosso-time">
 
             <a href="mailto:queiroznepomuceno@gmail.com">
                 <img src="icones/e-mail.png" alt="email">
-                <p class="contato"> queiroznepomuceno@gmail.com</p>
+                <p class="rede-social"> queiroznepomuceno@gmail.com</p>
             </a>
 
             <a href="https://www.instagram.com/queiroznepomuceno/" target="_blank">
                 <img src="icones/instagram.svg" alt="instagram">
-                <p class="contato">@queiroznepomuceno</p>
+                <p class="rede-social">@queiroznepomuceno</p>
             </a>
 
             <div>
-                <a href="https://api.whatsapp.com/send?phone=5581997190535&text=Olá gostaria de informações sobre os serviços da Queiroz e Nepomuceno Projeto e Construção" target="_blank">
+                <a href="https://api.whatsapp.com/send?phone=5581997190535&text=Olá gostaria de informações sobre os serviços da Queiroz e Nepomuceno Projeto e Construção"
+                    target="_blank">
                     <p class="contato">
                         <img id="img-telefone" src="icones/telefone.png" alt="telefone">(81) 99719-0535
                     </p>
                 </a>
-                <a href="https://api.whatsapp.com/send?phone=5581997658185&text=Olá gostaria de informações sobre os serviços da Queiroz e Nepomuceno Projeto e Construção" target="_blank">
-                    <p class="contato"id="p-telefone">
+                <a href="https://api.whatsapp.com/send?phone=5581997658185&text=Olá gostaria de informações sobre os serviços da Queiroz e Nepomuceno Projeto e Construção"
+                    target="_blank">
+                    <p class="contato" id="p-telefone">
                         (81) 99719-0535
                     </p>
                 </a>
-                <a href="https://api.whatsapp.com/send?phone=5581996551785&text=Olá gostaria de informações sobre os serviços da Queiroz e Nepomuceno Projeto e Construção" target="_blank">
+                <a href="https://api.whatsapp.com/send?phone=5581996551785&text=Olá gostaria de informações sobre os serviços da Queiroz e Nepomuceno Projeto e Construção"
+                    target="_blank">
                     <p class="contato" id="p-telefone">
                         (81) 99719-0535
                     </p>
                 </a>
             </div>
 
+        </footer> 
 
-
-            <!-- <p>© Copyright 2025</p> -->
-
-        </footer>
+          <p id="Copyright">©2025 Queiroz e Nepomuceno | Todos os direitos reservados </p> 
     </div>
 
 
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/slide.js"></script>
     <script src="js/script.js"></script>
+
 
 </body>
 

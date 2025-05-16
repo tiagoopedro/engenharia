@@ -416,6 +416,10 @@
         margin-bottom: 0;
     }
 
+#Copyright {
+    margin-bottom: 0;
+}
+
     [data-anime="nosso-time"] {
         transition: .8s;
     }
