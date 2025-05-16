@@ -56,3 +56,25 @@ function clickMenu(perfil) {
     animeScroll();
  }, 200));
 }
+
+
+/* funcao para que o menu aparece quando tem scroll up */
+
+const menu = document.getElementById('menu'); // Seleciona o elemento do menu
+let antes = window.pageYOffset;
+
+function verificarScroll() {
+    const atual = window.pageYOffset;
+    if (atual < antes) {
+        menu.classList.add('menu-fixo'); // Adiciona a classe quando o scroll não está no topo
+    } else {
+        menu.classList.remove('menu-fixo'); // Remove a classe quando o scroll está no topo
+    }
+
+    antes = atual;
+}
+
+window.addEventListener('scroll', verificarScroll); // Monitora o scroll
+
+// Chamada inicial da função para verificar o scroll
+verificarScroll();
