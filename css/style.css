@@ -56,7 +56,6 @@ a {
 #fundo-quem-somos {
     width: 100vw;
     background-color: #09372D;
-    /*era var 0 */
     display: flex;
     flex-flow: column;
     align-items: center;

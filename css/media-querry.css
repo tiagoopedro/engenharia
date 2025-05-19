@@ -151,7 +151,7 @@
     }
 
     #slide-capa {
-        background-image: url(../imagens/historico\ servico/capa-editada.png);
+        background-image: url(../imagens/historico\ servico/capa.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
@@ -185,7 +185,7 @@
         justify-content: flex-start;
         align-items: center;
         color: white;
-        background-image: url(../imagens/historico\ servico/b.jpg);
+        background-image: url(../imagens/fundos/fundo-serviços.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
