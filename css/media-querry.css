@@ -101,13 +101,13 @@
         position: fixed;
         top: 0;
         z-index: 1000;
-        transition: opacity .8s;
+        transition: opacity 1s ease;
     }
 
 
     .posicao-slider {
         position: relative;
-        top: 55px;
+        top: 40px;
     }
 
     header>img {
@@ -149,10 +149,6 @@
         transition-duration: 0.5s;
     }
 
-    /*
-    i#burguer {
-        display: none;
-    } */
 
     /* slider historico de serviços */
     .swiper-historico {

@@ -66,17 +66,24 @@ let scrollPrev = window.pageYOffset;
 
 function verificarScroll() {
     const scrollActual = window.pageYOffset;
+    
     if (scrollActual < scrollPrev) {
         menu.style.opacity = '1';
         menu.classList.add('menu-fixo'); // Adiciona a classe quando o scroll não está no topo 
-        slider.classList.add('posicao-slider')
-    } else {
+        slider.classList.add('posicao-slider');
+
+    } 
+    else if (scrollActual === 0) {
+       menu.style.opacity = '1'; 
+    }
+    else {
         menu.classList.remove('menu-fixo'); // Remove a classe quando o scroll está no topo
         slider.classList.remove('posicao-slider');
         menu.style.opacity = '0';
     }
 
     scrollPrev = scrollActual;
+
 }
 
 window.addEventListener('scroll', verificarScroll); // Monitora o scroll
