@@ -98,9 +98,10 @@
     .menu-fixo {
         position: fixed;
         top: 0;
-        z-index: 1000;
+        z-index: 2;
         width: 100%;
-        transition: .3s;
+        transition: 5s;
+         transform: translate3d(0px, 0px, 0);
     }
 
     header>img {
