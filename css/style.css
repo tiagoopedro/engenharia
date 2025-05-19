@@ -530,7 +530,6 @@ footer >a>p {
 }
 
 footer>a>img {
-    /* corrigir tamanho da img*/
     height: 30px;
     width: 30px;
     padding: 0px 3px;

@@ -58,7 +58,7 @@ function clickMenu(perfil) {
 }
 
 
-/* funcao para que o menu aparece quando tem scroll up */
+/* funcao para que o menu e o slide aparecem quando tem scroll up */
 
 const menu = document.getElementById('menu'); // Seleciona o elemento do menu
 const slider = document.getElementById('swiper-historico');
@@ -67,11 +67,13 @@ let scrollPrev = window.pageYOffset;
 function verificarScroll() {
     const scrollActual = window.pageYOffset;
     if (scrollActual < scrollPrev) {
-        menu.classList.add('menu-fixo'); // Adiciona a classe quando o scroll não está no topo
+        menu.style.opacity = '1';
+        menu.classList.add('menu-fixo'); // Adiciona a classe quando o scroll não está no topo 
         slider.classList.add('posicao-slider')
     } else {
         menu.classList.remove('menu-fixo'); // Remove a classe quando o scroll está no topo
-        slider.classList.remove('posicao-slider')
+        slider.classList.remove('posicao-slider');
+        menu.style.opacity = '0';
     }
 
     scrollPrev = scrollActual;
