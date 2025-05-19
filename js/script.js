@@ -71,12 +71,11 @@ function verificarScroll() {
         menu.style.opacity = '1';
         menu.classList.add('menu-fixo'); // Adiciona a classe quando o scroll não está no topo 
         slider.classList.add('posicao-slider');
-
     } 
-    else if (scrollActual === 0) {
+    else if (scrollActual === 0 ) {
        menu.style.opacity = '1'; 
     }
-    else {
+    else if (scrollActual > scrollPrev && window.innerWidth >= 992){
         menu.classList.remove('menu-fixo'); // Remove a classe quando o scroll está no topo
         slider.classList.remove('posicao-slider');
         menu.style.opacity = '0';
