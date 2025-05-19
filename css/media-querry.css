@@ -1,16 +1,7 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) {
-    /* i#burguer {
-        display: block;
-    }
-
-    i#burguer>img {
-        height: 30px;
-        width: 30px;
-        padding-left: 5px;
-    } */
-
+  
     header>#itens>a {
         display: none;
     }
@@ -44,14 +35,14 @@
     }
 
     .slide-mobile>h1,
-    h3,
-    p {
+    h3{
         color: #09372D;
     }
 
     .slide-mobile>p {
         font-size: 16px;
         font-weight: 600;
+        color: white;
     }
 
     .slide-mobile>h3 {

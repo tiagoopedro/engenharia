@@ -59,25 +59,6 @@ a {
     text-decoration: none;
 }
 
-/*
-i#burguer {
-    background-color: rgba(0, 0, 0, 0.068);
-    color: var(--cor0);
-    display: block;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    align-items: center;
-    cursor: pointer;
-}
-
-i#burguer>img {
-    height: 25px;
-    width: 25px;
-    padding: 4px;
-} */
 
 header {
     display: flex;
@@ -85,8 +66,6 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(255, 255, 255);
-    /* position: sticky;  menu fixo no top 
-     z-index: 1000; */
     top: 0;
     padding: 10px 10px;
     width: 95vw;
@@ -94,14 +73,6 @@ header {
 
 header>img {
     display: none;
-    /*  display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    height: 45px;
-    width: 240px;
-    padding-left: 2px;
-    margin-right: 10px;
-    border-left: 1px solid var(--cor0); */
 }
 
 header>#itens {
