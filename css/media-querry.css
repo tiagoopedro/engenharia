@@ -95,13 +95,18 @@
         width: 100vw;
     }
 
+    /*posicao do header */
     .menu-fixo {
         position: fixed;
         top: 0;
-        z-index: 2;
-        width: 100%;
+        z-index: 1000;
         transition: 5s;
-         transform: translate3d(0px, 0px, 0);
+        transform: translate3d(0px, 0px, 0);
+    }
+
+    .posicao-slider {
+        position: relative;
+        top: 55px; 
     }
 
     header>img {
