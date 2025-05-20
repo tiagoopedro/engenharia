@@ -78,7 +78,6 @@
         display: none;
     }
 
-    /*teste header = menu fixo */
 
     header {
         padding: 10px;
@@ -86,8 +85,6 @@
         width: 100vw;
     }
 
-
-    /*posicao do header */
     .menu-fixo {
         position: fixed;
         top: 0;
@@ -139,7 +136,7 @@
     }
 
 
-    /* slider historico de serviços */
+
     .swiper-historico {
         width: 100vw;
         height: 1010px;
@@ -254,7 +251,8 @@
         font-size: 14px;
 
     }
-    /* fim slider historico de serviços  */
+ 
+
 
     #fundo-quem-somos {
         background: linear-gradient(to right, #738754, #09372D, #09372D, #09372D, #738754);
@@ -316,7 +314,8 @@
         margin-top: 0;
     }
 
-    /* slide de serviços */
+   
+
     #h1-servicos-disposicao {
         font-size: 30px;
         margin: 50px 0 0 100px;
@@ -349,7 +348,8 @@
     .swiper-button-prev {
         display: block;
     }
-    /* slide de serviços fim */
+  
+    
 
     #clientes h1 {
         font-size: 30px;

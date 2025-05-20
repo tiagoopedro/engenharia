@@ -1,4 +1,4 @@
-//slide inicial historico de serviços 
+
 var swiper = new Swiper(".mySwiper-slide-historico", {
   slidesPerView: 1,
   spaceBetween: 30,
@@ -17,7 +17,7 @@ var swiper = new Swiper(".mySwiper-slide-historico", {
   },
 });
 
-//slide mobile
+
 var swiper = new Swiper(".mySwiper-slide-mobile", {
   slidesPerView: 1,
   spaceBetween: 30,
@@ -36,7 +36,7 @@ var swiper = new Swiper(".mySwiper-slide-mobile", {
   },
 });
 
-//serviços a disposicao
+
 function numeroSlide() {
   if (window.innerWidth >= 2000) {
     var swiper = new Swiper(".mySwiper", {
@@ -101,7 +101,7 @@ function numeroSlide() {
 }
 numeroSlide()
 
-// codigo do menu lateral do header
+
 var menuButton = document.querySelector('.menu-button');
 var openMenu = function () {
   swiper.slidePrev();

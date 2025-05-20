@@ -125,7 +125,7 @@ a {
     padding: 10px 40px 40px;
 }
 
-/* slide de serviços */
+
 #h1-servicos-disposicao {
     border-bottom: 2px solid var(--cor0);
     padding: 30px 0 0 0;
@@ -180,7 +180,8 @@ a {
 .swiper-button-prev {
     display: none;
 }
-/* slide de serviços fim */
+
+
 
 @keyframes slide {
     from {

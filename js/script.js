@@ -17,10 +17,6 @@ function clickMenu(perfil) {
 }
 
 
- /* funcao da animacao */
-
- //para otimizar usei essa funcao de debounce
-
  const debounce = function(func, wait, immediate) {
     let timeout;
     return function(...args) {
@@ -44,10 +40,8 @@ function clickMenu(perfil) {
    
     target.forEach(function(element) {
         if(windowTop > element.offsetTop) {
-            element.classList.add(animationClass) //'animate' ou a const como foi inserido
-        } /*else {
-           element.classList.remove(animationClass) 
-        }*/
+            element.classList.add(animationClass) 
+        }
     })
  }
 
@@ -58,9 +52,9 @@ function clickMenu(perfil) {
 }
 
 
-/* funcao para que o menu e o slide aparecem quando tem scroll up */
 
-const menu = document.getElementById('menu'); // Seleciona o elemento do menu
+
+const menu = document.getElementById('menu'); 
 const slider = document.getElementById('swiper-historico');
 let scrollPrev = window.pageYOffset;
 
@@ -69,14 +63,14 @@ function verificarScroll() {
     
     if (scrollActual < scrollPrev) {
         menu.style.opacity = '1';
-        menu.classList.add('menu-fixo'); // Adiciona a classe quando o scroll não está no topo 
+        menu.classList.add('menu-fixo'); topo 
         slider.classList.add('posicao-slider');
     } 
     else if (scrollActual === 0 ) {
        menu.style.opacity = '1'; 
     }
     else if (scrollActual > scrollPrev && window.innerWidth >= 992){
-        menu.classList.remove('menu-fixo'); // Remove a classe quando o scroll está no topo
+        menu.classList.remove('menu-fixo'); 
         slider.classList.remove('posicao-slider');
         menu.style.opacity = '0';
     }
@@ -85,7 +79,7 @@ function verificarScroll() {
 
 }
 
-window.addEventListener('scroll', verificarScroll); // Monitora o scroll
+window.addEventListener('scroll', verificarScroll); 
 
-// Chamada inicial da função para verificar o scroll
+
 verificarScroll();
