@@ -63,7 +63,7 @@ function verificarScroll() {
     
     if (scrollActual < scrollPrev) {
         menu.style.opacity = '1';
-        menu.classList.add('menu-fixo'); topo 
+        menu.classList.add('menu-fixo'); 
         slider.classList.add('posicao-slider');
     } 
     else if (scrollActual === 0 ) {
