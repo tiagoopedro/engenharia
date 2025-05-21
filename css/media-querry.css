@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) {
-  
+
     header>#itens>a {
         display: none;
     }
@@ -35,7 +35,7 @@
     }
 
     .slide-mobile>h1,
-    h3{
+    h3 {
         color: #09372D;
     }
 
@@ -81,7 +81,6 @@
 
     header {
         padding: 10px;
-        padding-bottom: 10px;
         width: 100vw;
     }
 
@@ -96,6 +95,10 @@
     .posicao-slider {
         position: relative;
         top: 50px;
+    }
+
+    nav {
+        margin-top: 0;
     }
 
     header>img {
@@ -251,7 +254,7 @@
         font-size: 14px;
 
     }
- 
+
 
 
     #fundo-quem-somos {
@@ -314,7 +317,7 @@
         margin-top: 0;
     }
 
-   
+
 
     #h1-servicos-disposicao {
         font-size: 30px;
@@ -348,8 +351,8 @@
     .swiper-button-prev {
         display: block;
     }
-  
-    
+
+
 
     #clientes h1 {
         font-size: 30px;
