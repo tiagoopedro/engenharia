@@ -407,6 +407,7 @@
     }
 }
 
+
 @media screen and (min-width: 1400px) {
 
 
@@ -733,6 +734,8 @@
     }
 
     .perfil>h2 {
+margin: 0; /* acrescentei aqui*/
+        text-indent: 30px; /* acrescentei aqui*/
         padding-left: 0;
     }
 
@@ -765,4 +768,7 @@
         transition: .8s;
     }
 
-}
+} 
+
+
+
