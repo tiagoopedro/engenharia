@@ -72,8 +72,8 @@
 }
 
 @media screen and (min-width: 992px) {
-    
-  .swiper-mobile {
+
+    .swiper-mobile {
         display: none;
     }
 
@@ -93,7 +93,7 @@
 
     .posicao-slider {
         position: relative;
-        top: 50px;
+        top: 71px;
     }
 
     nav {
@@ -141,11 +141,12 @@
 
     .swiper-historico {
         width: 100vw;
-        height: 900px; /*aqui*/
+        height: 900px;
+        /*aqui*/
         display: block;
     }
-    
- .swiper-historico:active {
+
+    .swiper-historico:active {
         cursor: grabbing;
     }
 
@@ -230,16 +231,22 @@
 
     .img-historico {
         display: flex;
-        width: 630px;/*aqui*/
-        height: 512px; /*aqui*/
+        width: 630px;
+        /*aqui*/
+        height: 512px;
+        /*aqui*/
         margin: 0 10px 5px;
         box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.637);
         border-radius: 8px;
     }
-.img-projeto {
-    width: 725px; /*aqui*/
-    height: 500px; /*aqui*/
-}
+
+    .img-projeto {
+        width: 725px;
+        /*aqui*/
+        height: 500px;
+        /*aqui*/
+    }
+
     #legendas {
         display: flex;
         flex-flow: row nowrap;
@@ -258,7 +265,7 @@
     }
 
 
-     #fundo-quem-somos {
+    #fundo-quem-somos {
         background: linear-gradient(to right, #738754, #09372D, #09372D, #09372D, #738754);
     }
 
@@ -318,7 +325,7 @@
         margin-top: 0;
     }
 
-  #h1-servicos-disposicao {
+    #h1-servicos-disposicao {
         font-size: 30px;
         margin: 50px 0 0 100px;
         padding-bottom: 0;
@@ -327,7 +334,7 @@
     }
 
 
-    
+
     .swiper {
         /*section*/
         width: 75vw;
@@ -338,7 +345,8 @@
     .servicos-disposicao {
         margin: auto;
         font-size: 18px;
-        height: 95%; /*aqui*/
+        height: 95%;
+        /*aqui*/
         padding: 10px 0;
     }
 
@@ -352,12 +360,15 @@
         display: block;
     }
 
-     #nosso-time {
+
+
+    #nosso-time {
         min-height: 1000px;
         flex-flow: row wrap;
         justify-content: center;
         align-items: flex-start;
-        padding: 10px; /*aqui*/
+        padding: 10px;
+        /*aqui*/
         background-position: right;
         /*escolher entre left e right*/
     }
@@ -370,19 +381,24 @@
     }
 
     .perfil {
-        padding: 2px; /*aqui*/
-        margin: 100px 0px 0px; /*aqui*/
+        padding: 2px;
+        /*aqui*/
+        margin: 100px 0px 0px;
+        /*aqui*/
         width: 450px;
-       /* width: auto; aqui eu apaguei esse*/
+        /* width: auto; aqui eu apaguei esse*/
         color: rgba(235, 29, 29, 0);
         border-radius: 50px;
         justify-content: flex-start;
     }
 
     .perfil>h2 {
-        margin: 0; /* acrescentei aqui*/
-        text-indent: 30px; /* acrescentei aqui*/
+        margin: 0;
+        /* acrescentei aqui*/
+        text-indent: 30px;
+        /* acrescentei aqui*/
         padding-left: 0;
+        margin: auto;
     }
 
     .perfil>p {
@@ -391,7 +407,10 @@
 
     .perfil>img {
         margin: 0 0 0 25px;
+        margin: auto;
     }
+
+
 
     footer {
         margin-top: 360px;
@@ -430,7 +449,7 @@
 
     .posicao-slider {
         position: relative;
-        top: 50px;
+        top: 71px;
     }
 
     nav {
@@ -733,8 +752,10 @@
     }
 
     .perfil>h2 {
-margin: 0; /* acrescentei aqui*/
-        text-indent: 30px; /* acrescentei aqui*/
+        margin: 0;
+        /* acrescentei aqui*/
+        text-indent: 30px;
+        /* acrescentei aqui*/
         padding-left: 0;
     }
 
@@ -767,8 +788,4 @@ margin: 0; /* acrescentei aqui*/
         transition: .8s;
     }
 
-} 
-
-
-
-
+}

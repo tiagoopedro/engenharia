@@ -47,6 +47,7 @@ p {
     height: 200px;
     width: 200px;
     margin: auto;
+    border-radius: 100px;
 }
 
 .perfil:hover {
@@ -71,6 +72,8 @@ p {
     display: none;
     color: white;
 }
+
+
 
 footer {
     margin: 150px 0 80px;
@@ -109,7 +112,6 @@ footer>a>img {
     padding: 5px 0px;
     color: white;
 }
-
 
 footer>div {
     display: flex;
