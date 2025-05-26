@@ -142,7 +142,6 @@
     .swiper-historico {
         width: 100vw;
         height: 900px;
-        /*aqui*/
         display: block;
     }
 
@@ -232,9 +231,7 @@
     .img-historico {
         display: flex;
         width: 630px;
-        /*aqui*/
         height: 512px;
-        /*aqui*/
         margin: 0 10px 5px;
         box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.637);
         border-radius: 8px;
@@ -242,9 +239,7 @@
 
     .img-projeto {
         width: 725px;
-        /*aqui*/
         height: 500px;
-        /*aqui*/
     }
 
     #legendas {
@@ -336,7 +331,6 @@
 
 
     .swiper {
-        /*section*/
         width: 75vw;
         height: 600px;
         padding: 30px 50px;
@@ -346,7 +340,6 @@
         margin: auto;
         font-size: 18px;
         height: 95%;
-        /*aqui*/
         padding: 10px 0;
     }
 
@@ -368,9 +361,7 @@
         justify-content: center;
         align-items: flex-start;
         padding: 10px;
-        /*aqui*/
         background-position: right;
-        /*escolher entre left e right*/
     }
 
     #nosso-time>h1 {
@@ -382,11 +373,8 @@
 
     .perfil {
         padding: 2px;
-        /*aqui*/
         margin: 100px 0px 0px;
-        /*aqui*/
         width: 450px;
-        /* width: auto; aqui eu apaguei esse*/
         color: rgba(235, 29, 29, 0);
         border-radius: 50px;
         justify-content: flex-start;
@@ -394,9 +382,7 @@
 
     .perfil>h2 {
         margin: 0;
-        /* acrescentei aqui*/
         text-indent: 30px;
-        /* acrescentei aqui*/
         padding-left: 0;
         margin: auto;
     }
@@ -426,6 +412,7 @@
     }
 }
 
+
 @media screen and (min-width: 1400px) {
 
 
@@ -445,7 +432,6 @@
         z-index: 1000;
         transition: opacity 1s ease;
     }
-
 
     .posicao-slider {
         position: relative;
