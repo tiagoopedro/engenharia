@@ -37,48 +37,29 @@ var swiper = new Swiper(".mySwiper-slide-mobile", {
 });
 
 
-function numeroSlide() {
+function slideServicoDisposicao() {
+  function padrao(numerodeSlides) {
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: numerodeSlides,
+    spaceBetween: 40,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  })
+}
   if (window.innerWidth >= 2000) {
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 4,
-      spaceBetween: 40,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    })
+   padrao(4)
   }
   else if (window.innerWidth >= 992) {
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 40,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    })
+    padrao(3)
   }
   else if (window.innerWidth >= 768) {
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 2,
-      spaceBetween: 40,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    })
+   padrao(2)
   }
   else {
     var swiper = new Swiper(".mySwiper", {
@@ -99,7 +80,7 @@ function numeroSlide() {
     })
   }
 }
-numeroSlide()
+slideServicoDisposicao()
 
 
 var menuButton = document.querySelector('.menu-button');
